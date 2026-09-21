@@ -8,8 +8,18 @@ A networking issue. The game can't establish a stable connection to the multipla
 Prerequisite: Check if the servers are actually down.
 Before troubleshooting your own network, check the official Monster Hunter status account at [@MHStatusUpdates ](https://x.com/mhstatusupdates). If they are reporting a widespread outage or maintenance, the issue is on Capcom's end and no local fix will work. Wait for the servers to come back online.
 
-Fixes (try in order):
+Note: This error is reported by players worldwide, but players in some countries such as Egypt hit it due to regional network restrictions. If you suspect this applies to you, check the Regional Fixes section at the bottom of this page.
+
+General Fixes (try in order):
 
 1. Restart your router. Turn it off, wait 30 seconds (so it fully powers down and clears cached connections), then turn it back on.
 
-2. 
+2. Check your NAT type. 1 (Full Cone NAT) or 2 (Restricted Cone NAT/Port Restricted Cone NAT) is fine. 3 (Symmetric NAT) is strict. To do so:
+
+PlayStation: Settings → Network → View Connection Status → NAT Type.
+
+Xbox: Settings → General → Network settings → Test NAT type.
+
+PC: Visit https://www.checkmynat.com/ and click Detect NAT. If it shows you Symmetric NAT, that's type 3, and is severely limiting. You can remedy this by accessing your admin router page (you'll need your router's credentials, usually found on the router itself,) finding Universal Plug and Play (UPnP,) usually found under sections such as "NAT," "Port Fowarding," or "Advanced," and enabling it.
+
+Note: 
