@@ -22,6 +22,6 @@ Xbox: Settings → General → Network settings → Test NAT type.
 
 PC: Visit https://www.checkmynat.com/ and click Detect NAT. If it shows you Symmetric NAT, that's type 3, and is severely limiting. You can remedy this by accessing your admin router page (you'll need your router's credentials, usually found on the router itself,) finding Universal Plug and Play (UPnP,) usually found under sections such as "NAT," "Port Fowarding," or "Advanced," and enabling it.
 
-Note: While a possible fix, UPnP has a known security trade-off. It lets devices on your network open ports automatically. For most home users, the difference is negligible. If you're security-conscious or on a shared network, you can skip UPnP and manually forward the ports instead. To manually forward the ports, visit [Manual Port Forwarding](Manual Port Forwarding.md)
+Note: While a possible fix, UPnP has a known security trade-off. It lets devices on your network open ports automatically. For most home users, the difference is negligible. If you're security-conscious or on a shared network, you can skip UPnP and manually forward the ports instead. To manually forward the ports, visit [Manual Port Forwarding](Manual%20Port%20Forwarding.md).
 
 
