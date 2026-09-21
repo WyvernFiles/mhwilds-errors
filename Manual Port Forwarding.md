@@ -13,4 +13,4 @@ A port is a window. If closed, it can be manually opened to let traffic through.
 
 **How do you manually forward ports?**
 
-Before you manually forward ports, your device needs a static IP address. Otherwise, a dynamic IP address may assign a new IP address later, breaking your port forwarding rules. To learn how to set up a static IP address, visit . If you already have one set up, continue reading.
+Before you manually forward ports, your device needs a static IP address. Otherwise, a dynamic IP address may assign a new IP address later, breaking your port forwarding rules. To learn how to set up a static IP address, visit [How to set up a Static IP Address](How to set up a Static IP Address.md). If you already have one set up, continue reading.
