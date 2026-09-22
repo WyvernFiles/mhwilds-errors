@@ -39,4 +39,4 @@ On **PC:**
 
 On **Consoles:**
 
-You will have to disable IPv6 through your router's admin page. To learn how, visit [How to Disable IPv6 for Consoles](How%20to%20Disable%20IPv6%20for%20Consoles.md). If you wish to try other steps first, continue reading.
+You will have to disable IPv6 through your router's admin page. To learn how, visit [How to Disable IPv6 for Consoles](How%20to%20Disable%20IPv6%20for%20Consoles). If you wish to try other steps first, continue reading.
