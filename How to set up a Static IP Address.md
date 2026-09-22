@@ -1,23 +1,38 @@
 
-Static IP Setup (Required Before Port Forwarding)
+**Static IP Setup (Required Before Port Forwarding)**
 
 A static IP address is required for port forwarding to work, as a dynamic IP address may simply change the IP, breaking the port forwarding.
 
 To set up a static IP address:
 
-On Playstation:
+**On Playstation:**
 
-PS5: Settings → Network → View Connection Status
- 
-Take note of your IP Address, MAC Address, and Gateway
- 
-Then, you will need to log into your router:
+- Go to Settings
+- Go to Network - View Connection Status
+- Take note of your IP Address, MAC Address, and Gateway.
+
+**On Xbox Series X|S / Xbox One:**
+
+- Press the Xbox button to open the guide.
+- Go to Profile & system > Settings > General > Network settings.
+- Select Advanced settings.
+- Take note of your IP address, MAC address (also called Wireless MAC Address or Ethernet MAC Address,) and Gateway.
+
+**On PC (Windows):**
+
+- Press Win + R
+- Type "cmd" and press Enter
+- Type ipconfig /all and press Enter
+- Find your active adapter (Ethernet or Wi-Fi)
+- Take note of your IPv4 Address, Physical Address (this is your MAC Address,) and Default Gateway (usually begins with 192.)
+  
+Then, you will need to **log into your router:**
 
 - Open a browser
 - Type your Gateway in the address field to enter your router's admin page
 - Enter your router's username and password, usually found on a sticker on the router itself
 
-After you log into your router's admin page, you will need to find the "Create DHCP Reservation" function. It is usually found in the following tabs, or ones similarly named:
+After you log into your router's admin page, you will need to **find the "Create DHCP Reservation" function.** It is usually found in the following tabs, or ones similarly named:
 
 - LAN
 - Address/DHCP Reservation
@@ -26,10 +41,10 @@ After you log into your router's admin page, you will need to find the "Create D
 - DHCP Static Leases
 - Reserved IP
 
-After you find it:
+After you find "Create DHCP Reservation":
 
-- Find and click "Create DHCP Reservation"
-- Add your PS5's MAC and IP Address when prompted
+- Press it
+- Add your device's MAC and IP Address when prompted
 - Save changes
 
-Now, you should have reserved a static IP address for your device, while leaving its own network settings automatic and reliable. Return to [Manual Port Forwarding](Manual%20Port%20Forwarding.md) and continue reading.
+Now, you should have reserved a static IP address for your device, while leaving its own network settings automatic and reliable. Return to [Manual Port Forwarding](Manual%20Port%20Forwarding.md) and continue reading to learn how to open the specific ports Capcom's servers need.
