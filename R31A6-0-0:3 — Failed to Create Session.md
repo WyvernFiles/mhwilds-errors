@@ -26,7 +26,7 @@ Before troubleshooting your own network, check the official Monster Hunter statu
 
 If your NAT type is 1 or 2, or you enabled UPnP or manually forwarded the ports and the problem persists, continue reading.
 
-3. Disable IPv6. IPv6 is a more modern internet protocol whose routing implementation is sometimes not as stable as IPv4. By disabling it, we force the device through more stable routing with IPv4. This has no bearing on latency or lag.
+3. Disable IPv6. Some networks may have IPv6 routing problems that do not affect IPv4. Disabling IPv6 forces the device to use IPv4 instead. This has no bearing on latency or lag.
 
 On **PC:**
 
