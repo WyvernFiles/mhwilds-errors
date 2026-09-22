@@ -9,14 +9,14 @@ To set up a static IP address:
 
 - Go to Settings
 - Go to Network - View Connection Status
-- Take note of your IP Address, MAC Address, and Gateway.
+- Take note of your IP Address, MAC Address, and Gateway
 
 **On Xbox Series X|S / Xbox One:**
 
-- Press the Xbox button to open the guide.
-- Go to Profile & system > Settings > General > Network settings.
-- Select Advanced settings.
-- Take note of your IP address, MAC address (also called Wireless MAC Address or Ethernet MAC Address,) and Gateway.
+- Press the Xbox button to open the guide
+- Go to Profile & system > Settings > General > Network settings
+- Select Advanced settings
+- Take note of your IP address, MAC address (also called Wireless MAC Address or Ethernet MAC Address,) and Gateway
 
 **On PC (Windows):**
 
@@ -24,13 +24,9 @@ To set up a static IP address:
 - Type "cmd" and press Enter
 - Type ipconfig /all and press Enter
 - Find your active adapter (Ethernet or Wi-Fi)
-- Take note of your IPv4 Address, Physical Address (this is your MAC Address,) and Default Gateway (usually begins with 192.)
+- Take note of your IPv4 Address, Physical Address (this is your MAC Address,) and Default Gateway
   
-Then, you will need to **log into your router:**
-
-- Open a browser
-- Type your Gateway in the address field to enter your router's admin page
-- Enter your router's username and password, usually found on a sticker on the router itself
+Then, you will need to **log into your router.** To learn how, visit []()
 
 After you log into your router's admin page, you will need to **find the "Create DHCP Reservation" function.** It is usually found in the following tabs, or ones similarly named:
 
