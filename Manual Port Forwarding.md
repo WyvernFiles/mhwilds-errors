@@ -41,3 +41,5 @@ After which you will have to fill the fields with specific port information:
 - IP Address: Enter your device's Static IP Address or, preferably, the one you reserved previously in your router settings
 - Protocol: Select Both (TCP & UDP.) If your router forces a choice, create two rules: one for TCP, one for UDP.
 - Port Range: Enter the ports listed on the [official Capcom page.](https://www.monsterhunter.com/support/wilds/faq/detail/041) If it's a range (e.g., 3478-3480), use the hyphen. If it's a single port, just type the number.
+
+**Security Note:** In the official page, The UDP range required for all platforms is considerably massive. Opening such a wide-range of ports is a low-priority concern on a secure, private network. However, in shared networks with many other devices like a campus, it creates more opportunities for threats if said devices were infected.
