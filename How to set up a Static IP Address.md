@@ -26,7 +26,7 @@ To set up a static IP address:
 - Find your active adapter (Ethernet or Wi-Fi)
 - Take note of your IPv4 Address, Physical Address (this is your MAC Address,) and Default Gateway
   
-Then, you will need to **log into your router.** To learn how, visit []()
+Then, you will need to **log into your router.** To learn how, visit [How to Access your Router's Admin Page](How%20to%20Access%20your%20Router's%20Admin%20Page.md)
 
 After you log into your router's admin page, you will need to **find the "Create DHCP Reservation" function.** It is usually found in the following tabs, or ones similarly named:
 
