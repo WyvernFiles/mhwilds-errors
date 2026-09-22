@@ -32,5 +32,4 @@ After you find it:
 - Add your PS5's MAC and IP Address when prompted
 - Save changes
 
-Your console should now have a permanent address.
-
+Now, you should have reserved a static IP address for your device, while leaving its own network settings automatic and reliable. Return to [Manual Port Forwarding](Manual%20Port%20Forwarding.md) and continue reading.
