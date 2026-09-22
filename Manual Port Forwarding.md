@@ -17,4 +17,27 @@ Before you manually forward ports, your device needs a static IP address. Otherw
 
 **How do you manually forward ports?**
 
-Usually, UPnP handles Port Forwarding automatically. If you wish to avoid it, or if it is unavailable or doesn't work. You will have to manually open specific ports to the game's servers to allow a stable connection. This is done by accessing your router's admin page. You will need your router's username and password, usually found on a sticker on the router itself, and your router's Gateway. If you don't know how to find your Gateway, visit [How to set up a Static IP Address.md](How%20to%20set%20up%20a%20Static%20IP%20Address.md)
+Usually, UPnP handles Port Forwarding automatically. If you wish to avoid it, or if it is unavailable or doesn't work. You will have to manually open specific ports to the game's servers to allow a stable connection. This is done by accessing your router's admin page. You will need your router's username and password, usually found on a sticker on the router itself, and your router's Gateway. If you don't know how to find your Gateway or your router's admin page, visit [How to set up a Static IP Address.md](How%20to%20set%20up%20a%20Static%20IP%20Address.md)
+
+In your router's admin page, the names vary based on brand. You will need to find the function which allows you to manually open ports. Look for keywords such as :
+
+- Port Forwarding
+- NAT
+- Virtual Server
+- Advanced Settings
+
+In such sections, to manually open a port, the option to do so may be called:
+
+- Add Rule
+- Create New
+- New Entry
+- Add Service
+- Enable
+- Insert
+
+After which you will have to fill the fields with specific port information:
+
+- Service Name: Give it a name you can easily recognize (i.e MHWilds)
+- IP Address: Enter your device's Static IP Address or, preferably, the one you reserved previously in your router settings
+- Protocol: Select Both (TCP & UDP.) If your router forces a choice, create two rules: one for TCP, one for UDP.
+- Port Range: Enter the ports listed on the [official Capcom page.](https://www.monsterhunter.com/support/wilds/faq/detail/041) If it's a range (e.g., 3478-3480), use the hyphen. If it's a single port, just type the number.
