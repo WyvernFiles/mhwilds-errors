@@ -1,6 +1,6 @@
 
 **Symptoms:**
-You try to start a multiplayer session and get the error "Failed to create session. R31A6-0-0:3." The session doesn't start.
+You try to start a multiplayer session, host or join an online quest, and get the error "Failed to create session. R31A6-0-0:3."
 
 **Cause:**
 A networking issue. The game can't establish a stable connection to the multiplayer servers. This is usually related to region, NAT type, or IPv6 routing.
@@ -10,7 +10,7 @@ Before troubleshooting your own network, check the official Monster Hunter statu
 
 **Note:** This error is reported by players worldwide, but players in some countries such as Egypt hit it due to regional network restrictions. If you suspect this applies to you, check the Regional Fixes section at the bottom of this page.
 
-**General Fixes (try in order):**
+### **General Fixes (try in order):**
 
 1. Restart your router. Turn it off, wait 30 seconds (so it fully powers down and clears cached connections), then turn it back on.
 
