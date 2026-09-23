@@ -8,13 +8,13 @@ A networking issue. The game can't establish a stable connection to the multipla
 **Prerequisite:** Check if the servers are actually down.
 Before troubleshooting your own network, check the official Monster Hunter status account at [@MHStatusUpdates ](https://x.com/mhstatusupdates). If they are reporting a widespread outage or maintenance, the issue is on Capcom's end and no local fix will work. Wait for the servers to come back online.
 
-**Note:** This error is reported by players worldwide, but players in some countries such as Egypt hit it due to regional network restrictions. If you suspect this applies to you, check the Regional Fixes section at the bottom of this page.
+**Regional Note:** This error is reported by players worldwide, but players in some countries such as Egypt hit it due to regional network restrictions. If you suspect this applies to you, check the Regional Fixes section at the bottom of this page.
 
 ### **General Fixes (try in order):**
 
-1. Restart your router. Turn it off, wait 30 seconds (so it fully powers down and clears cached connections), then turn it back on.
+**1. Restart your router.** Turn it off, wait 30 seconds (so it fully powers down and clears cached connections), then turn it back on.
 
-2. Check your NAT type. 1 (Full Cone NAT) or 2 (Restricted Cone NAT/Port Restricted Cone NAT) is fine. 3 (Symmetric NAT) may interfere with multiplayer connectivity. To do so:
+**2. Check your NAT type.** 1 (Full Cone NAT) or 2 (Restricted Cone NAT/Port Restricted Cone NAT) is fine. 3 (Symmetric NAT) may interfere with multiplayer connectivity. To do so:
 
 **PlayStation:** Settings → Network → View Connection Status → NAT Type.
 
@@ -26,7 +26,7 @@ Before troubleshooting your own network, check the official Monster Hunter statu
 
 If your NAT type is 1 or 2, or you enabled UPnP or manually forwarded the ports and the problem persists, continue reading.
 
-3. Disable IPv6. Some networks may have IPv6 routing problems that do not affect IPv4. Disabling IPv6 forces the device to use IPv4 instead. This has no bearing on latency or lag.
+**3. Disable IPv6.** Some networks may have IPv6 routing problems that do not affect IPv4. Disabling IPv6 forces the device to use IPv4 instead. This has no bearing on latency or lag.
 
 On **PC:**
 
@@ -37,6 +37,18 @@ On **PC:**
 - Find "Internet Protocol Version 6 (TCP/IPv6)"
 - Uncheck it and click OK
 
-On **Consoles:**
+On **Playstation and Xbox:**
 
 You will have to disable IPv6 through your router's admin page. To learn how, visit [How to Disable IPv6 for Consoles](How%20to%20Disable%20IPv6%20for%20Consoles.md). If you wish to try other steps first, continue reading.
+
+**4. Disable Crossplay.** This is especially relevant in certain countries with regional restrictions or limitations, but means losing the ability to play with different platform users. In Monster Hunter Wilds, this will also mean that you can only play with those who have their own Crossplay setting disabled.
+
+To disable it:
+
+- Navigate to Title Screen
+- Select Options
+- Open Game Settings
+- Find Crossplay
+- Set it to Disable
+
+
