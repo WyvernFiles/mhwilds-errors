@@ -17,7 +17,7 @@ Before you manually forward ports, your device needs a static IP address. Otherw
 
 **How do you manually forward ports?**
 
-Usually, UPnP handles Port Forwarding automatically. If you wish to avoid it, or if it is unavailable or doesn't work. You will have to manually open specific ports to the game's servers to allow a stable connection. This is done by accessing your router's admin page. You will need your router's username and password, usually found on a sticker on the router itself, and your router's Gateway. If you don't know how to find your Gateway or your router's admin page, visit [How to set up a Static IP Address.md](How%20to%20set%20up%20a%20Static%20IP%20Address.md)
+Usually, UPnP handles Port Forwarding automatically. If you wish to avoid it, or if it is unavailable or doesn't work. You will have to manually open specific ports to the game's servers to allow a stable connection. This is done by accessing your router's admin page. You will need your router's username and password, usually found on a sticker on the router itself, and your router's Gateway. If you don't know how to find your Gateway or your router's admin page, visit [How to Access your Router's Admin Page](How%20to%20Access%20your%20Router's%20Admin%20Page.md).
 
 In your router's admin page, the names vary based on brand. You will need to find the function which allows you to manually open ports. Look for keywords such as :
 
