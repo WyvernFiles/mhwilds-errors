@@ -20,7 +20,7 @@ Before troubleshooting your own network, check the official Monster Hunter statu
 
 **PC:** Visit https://www.checkmynat.com/ and click Detect NAT. If it shows you Symmetric NAT, that's type 3, and may handicap multiplayer connectivity. You can remedy this by accessing your router's admin page. Learn how in [How to Access your Router's Admin Page](How%20to%20Access%20your%20Router's%20Admin%20Page.md).
 
-After you enter your router's admin page, you will have to find Universal Plug and Play (UPnP,) which is usually found under sections such as "NAT," "Port Forwarding," or "Advanced," and enabling it.
+After you enter your router's admin page, you will have to find **Universal Plug and Play (UPnP,)** which is usually found under sections such as **"NAT," "Port Forwarding," or "Advanced,"** and enabling it.
 
 **Note:** While a possible fix, UPnP has a known security trade-off. It lets devices on your network open ports automatically. For most home users, the difference is negligible. If you're security-conscious or on a shared network you're wary of (like a campus's,) you can skip UPnP and manually forward the ports instead. To manually forward the ports, visit [Manual Port Forwarding](Manual%20Port%20Forwarding.md).
 
