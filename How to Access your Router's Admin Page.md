@@ -1,18 +1,17 @@
-Gaining access to your router's admin page is sometimes necessary for manual configuration. To do so, you will need your router's 
-gateway.
+Gaining access to your router's admin page is sometimes necessary for manual configuration. To do so, you will need your router's Default Gateway.
 
 On **Playstation:**
 
 - Go to Settings
 - Go to Network - View Connection Status
-- Find and mark your Gateway (usually beginning with 192)
+- Find and note your Default Gateway (usually beginning with 192)
 
 On **Xbox Series X|S / Xbox One:**
 
 - Press the Xbox button to open the guide
 - Go to Profile & system > Settings > General > Network settings
 - Select Advanced settings
-- Find and mark your Gateway (usually beginning with 192)
+- Find and mark your Default Gateway (usually beginning with 192)
 
 On **PC (Windows):**
 
@@ -20,7 +19,7 @@ On **PC (Windows):**
 - Type "cmd" and press Enter
 - Type ipconfig /all and press Enter
 - Find your active adapter (Ethernet or Wi-Fi)
-- Find and mark your Gateway (usually beginning with 192)
+- Find and mark your Default Gateway (usually beginning with 192)
 
 Then, you will need to **log into your router:**
 
