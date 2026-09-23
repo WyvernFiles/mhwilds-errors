@@ -22,7 +22,7 @@ Before troubleshooting your own network, check the official Monster Hunter statu
 
 After you enter your router's admin page, you will have to find Universal Plug and Play (UPnP,) which is usually found under sections such as "NAT," "Port Forwarding," or "Advanced," and enabling it.
 
-**Note:** While a possible fix, UPnP has a known security trade-off. It lets devices on your network open ports automatically. For most home users, the difference is negligible. If you're security-conscious or on a shared network, you can skip UPnP and manually forward the ports instead. To manually forward the ports, visit [Manual Port Forwarding](Manual%20Port%20Forwarding.md).
+**Note:** While a possible fix, UPnP has a known security trade-off. It lets devices on your network open ports automatically. For most home users, the difference is negligible. If you're security-conscious or on a shared network you're wary of (like a campus's,) you can skip UPnP and manually forward the ports instead. To manually forward the ports, visit [Manual Port Forwarding](Manual%20Port%20Forwarding.md).
 
 If your NAT type is 1 or 2, or you enabled UPnP or manually forwarded the ports and the problem persists, continue reading.
 
