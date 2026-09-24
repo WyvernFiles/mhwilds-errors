@@ -2,8 +2,7 @@
 **Symptoms:**
 You try to start a multiplayer session, host or join an online quest, and get the error "Failed to create session. R31A6-0-0:3."
 
-**Cause:**
-A networking issue. The game can't establish a stable connection to the multiplayer servers. This is usually related to region, NAT type, or IPv6 routing.
+**Likely Cause:** A network connectivity issue preventing the game from establishing the multiplayer session. The cause can vary and may involve region, NAT type, or IPv6 routing and firewall rules.
 
 **Prerequisite:** Check if the servers are actually down.
 Before troubleshooting your own network, check the official Monster Hunter status account at [@MHStatusUpdates ](https://x.com/mhstatusupdates). If they are reporting a widespread outage or maintenance, the issue is on Capcom's end and no local fix will work. Wait for the servers to come back online.
@@ -74,5 +73,7 @@ After installing 1.1.1.1:
   - Click Wi-Fi/Ethernet (Name may change based on your connection type)
   - Select your active connection (Usually selected by default if there is only one)
   - Change "Network profile type" from "Public network" to "Private network"
-  - Try hosting/joining a quest.
+  - Try hosting/joining a quest
 
+### **If none of these fixes work:**
+The problem might be outside your control. It could be an issue with Capcom's multiplayer infrastructure or your ISP's routing. If the steps above did not resolve the issue, you can try reporting the problem to [Capcom Support](https://www.monsterhunter.com/support/wilds/en/form/consent) by filling out their technical inquiry contact form. Include your platform, region, ISP, error code, and the troubleshooting steps you already tried.
