@@ -53,7 +53,26 @@ To disable it:
 
 If you need Crossplay on, continue reading.
 
-### **Regional Workaround:**
+**5. PC only. Use a Virtual Private Network (VPN).** Some countries, like Egypt, encounter this error due to regional limitations. A VPN like Cloudflare's WARP changes the route data takes from your device to the game's servers, without forcing said data through a distant, higher-latency server like a conventional VPN. If the error results from the route your Internet Service Provider (ISP) takes to the game's server, then changing said route may resolve the issue. 
 
-**1. Use a Virtual Private Network (VPN).** Some countries, like Egypt, encounter this error due to regional limitations. Cloudflare WARP changes the network path without forcing routing through a distant server, which may add high latency. 
+To use WARP, you will need to download the application at [1.1.1.1](https://one.one.one.one/).
+
+After installing 1.1.1.1:
+
+- Open the app
+- Make sure the mode is WARP, not 1.1.1.1/DNS-only
+- Turn the WARP toggle ON
+- Wait until the app shows that WARP is connected
+- Launch Monster Hunter Wilds and try hosting/joining a quest again
+- 
+**6. PC only. Change network profile from public to private.** Low-confidence fix. A public network profile has stricter firewall rules than a private one. If such rules were the cause behind the error, a more lax private profile may work.
+
+  To do so:
+
+  - Win + I
+  - Go to Network & Internet
+  - Click Wi-Fi/Ethernet (Name may change based on your connection type)
+  - Select your active connection (Usually selected by default if there is only one)
+  - Change "Network profile type" from "Public network" to "Private network"
+  - Try hosting/joining a quest.
 
