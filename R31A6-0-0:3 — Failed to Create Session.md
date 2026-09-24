@@ -64,7 +64,7 @@ After installing 1.1.1.1:
 - Turn the WARP toggle ON
 - Wait until the app shows that WARP is connected
 - Launch Monster Hunter Wilds and try hosting/joining a quest again
-- 
+
 **6. PC only. Change network profile from public to private.** Low-confidence fix. A public network profile has stricter firewall rules than a private one. If such rules were the cause behind the error, a more lax private profile may work.
 
   To do so:
