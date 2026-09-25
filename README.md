@@ -1,5 +1,5 @@
 # mhwilds-errors
-I began working on this database to help solve the recurring errors the community was struggling with. Many guides on the internet have incomplete or inaccurate information, with some offering harmful advice without caution. This is a work in progress.
+I began working on this database to help solve the recurring errors the community was struggling with. Many guides on the internet have incomplete or inaccurate information, with some offering harmful advice without caution. This is a work in progress. The fixes are not guarantees, but all fixes mentioned have been reported to work for one person or another.
 
 Maintained by Sandman.
 
