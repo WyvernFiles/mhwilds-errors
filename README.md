@@ -1,2 +1,4 @@
 # mhwilds-errors
-A community-driven database for Monster Hunter Wilds players, providing immediate access to error codes, known issues, and their fixes.
+I began working on this database to help solve the recurring errors the community was struggling with. Many guides on the internet have incomplete or inaccurate information, with some offering harmful advice without caution.
+
+Maintained by Sandman.
