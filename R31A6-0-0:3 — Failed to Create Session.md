@@ -19,7 +19,7 @@ Before troubleshooting your own network, check the official Monster Hunter statu
 
 **PC:** Visit https://www.checkmynat.com/ and click Detect NAT. If it shows you Symmetric NAT, that's type 3, and may handicap multiplayer connectivity. You can remedy this by accessing your router's admin page. Learn how in [How to Access your Router's Admin Page](How%20to%20Access%20your%20Router's%20Admin%20Page.md).
 
-After you enter your router's admin page, you will have to find **Universal Plug and Play (UPnP,)** which is usually found under sections such as **"NAT," "Port Forwarding," or "Advanced,"** and enabling it.
+After you enter your router's admin page, you will have to find **Universal Plug and Play (UPnP),** which is usually found under sections such as **"NAT," "Port Forwarding," or "Advanced,"** and enable it.
 
 **Note:** While a possible fix, UPnP has a known security trade-off. It lets devices on your network open ports automatically. For most home users, the difference is negligible. If you're security-conscious or on a shared network you're wary of (like a campus's,) you can skip UPnP and manually forward the ports instead. To manually forward the ports, visit [Manual Port Forwarding](Manual%20Port%20Forwarding.md).
 
@@ -52,9 +52,9 @@ To disable it:
 
 If you need Crossplay on, continue reading.
 
-**5. PC only. Use a Virtual Private Network (VPN).** Some countries, like Egypt, encounter this error due to regional limitations. A VPN like Cloudflare's WARP changes the route data takes from your device to the game's servers, without forcing said data through a distant, higher-latency server like a conventional VPN. If the error results from the route your Internet Service Provider (ISP) takes to the game's server, then changing said route may resolve the issue. 
+**5. PC only. Change Virtual Private Network (VPN) status.** Some countries, like Egypt, encounter this error due to regional limitations. The game may treat connections differently based on their IP address or geographic origin. First, if you have a VPN enabled, try disabling it and see if that resolves the error. If it does not:
 
-To use WARP, you will need to download the application at [1.1.1.1](https://one.one.one.one/).
+If the error results because of how data is routed from your device to the game's servers, A VPN like Cloudflare's WARP changes that route, possibly resolving the issue. If you wish to try Cloudflare's WARP, you will need to download the application at [1.1.1.1](https://one.one.one.one/).
 
 After installing 1.1.1.1:
 
@@ -63,6 +63,8 @@ After installing 1.1.1.1:
 - Turn the WARP toggle ON
 - Wait until the app shows that WARP is connected
 - Launch Monster Hunter Wilds and try hosting/joining a quest again
+
+**Note:** If the error is related to how your connection is treated based on your geographic origin, then trying a VPN that makes it seem like you're connecting from a different country may bypass that. Cloudflare does not achieve that, but a more conventional VPN does. If you wish to test whether this is the case, I recommend trying Proton VPN, as it has unlimited data on its free plan.
 
 **6. PC only. Change network profile from public to private.** Low-confidence fix. A public network profile has stricter firewall rules than a private one. If such rules were the cause behind the error, a more lax private profile may work.
 
