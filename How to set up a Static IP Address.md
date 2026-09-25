@@ -1,5 +1,5 @@
 
-**Static IP Setup (Required Before Port Forwarding)**
+### **Static IP Setup (Required Before Port Forwarding)**
 
 A static IP address is required for port forwarding to work, as a dynamic IP address may simply change the IP, breaking the port forwarding.
 
