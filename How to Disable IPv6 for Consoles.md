@@ -1,5 +1,5 @@
 
-**Note:** Unlike PCs, where IPv6 can be disabled for the individual device, consoles may require disabling IPv6 at the router-level, which affects all connected devices. This is usually fine if your daily home usage looks like streaming, YouTube, Steam, Discord, gaming, web browsing, email, downloads, etc. Those can generally operate perfectly well over IPv4. The probability that disabling IPv6 breaks something a typical home user needs is not zero, but very low. IPv6 can simply be re-enabled if it breaks compatibility with anything.
+**Note:** Unlike PCs, where IPv6 can be disabled for the individual device, consoles may require disabling IPv6 at the router-level, which not all routers allow. This affects all devices connected to the router. This is usually fine if your daily home usage looks like streaming, YouTube, Steam, Discord, gaming, web browsing, email, downloads, etc. Those can generally operate perfectly well over IPv4. The probability that disabling IPv6 breaks something a typical home user needs is not zero, but very low. IPv6 can simply be re-enabled if it breaks compatibility with anything.
 
 To **disable IPv6 for Playstation and Xbox consoles, you will need to access your router's admin page.** You can visit [How to Access your Router's Admin Page](How%20to%20Access%20your%20Router's%20Admin%20Page.md) to learn how.
 
