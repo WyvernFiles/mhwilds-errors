@@ -4,3 +4,10 @@
 
 
 ### General Fixes (try in order):
+**1.Disable Frame Generation and overlays/recorders.** The game may be sensitive to Frame Gen features on certain GPUs and overclocks.
+
+**Disabling Frame Gen:** 
+
+- Open the Settings menu
+- Navigate to the Graphics tab
+- Look for the Frame Generation toggle and turn it off
