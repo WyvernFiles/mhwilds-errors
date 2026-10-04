@@ -65,7 +65,7 @@ Afterwards, delete your shader.cache2 file:
 - Find and delete "shader.cache2"
 
 ## **4. Check and Adjust your GPU Driver.** 
-Some GPU driver versions are more or less stable than others when it comes to Wilds.
+Some GPU driver versions are more or less stable than others when it comes to Wilds. Note that when it comes to uninstalling a GPU driver, it is recommended to use Display Driver Uninstaller (DDU) to perform a clean uninstall, as manually uninstalling a driver may leave residual files that can interfere with future driver performance. To learn how to use DDU to uninstall your current driver, then install a new one, navigate to [How to use Display Drive Uninstaller](https://github.com/WyvernFiles/mhwilds-errors/blob/main/How%20to%20use%20Display%20Drive%20Uninstaller.md).
 
-If you recently updated your driver and then crashes occurred, roll back to the previous version. If you're using an older driver and still crashing, consider updating to the latest version. **For AMD Users:** If you are on **driver 25.10.2 or newer**, these are known to be problematic for Wilds. Try rolling back to **25.9.1 or 25.9.2**. You will need to use Display Driver Uninstaller (DDU) to perform a clean uninstall, as manually uninstalling a driver may leave residual files that can interfere with future driver performance. To learn how to use DDU to uninstall your current driver, then install a new one, navigate to [How to use Display Drive Uninstaller]
+If you recently updated your driver and then crashes occurred, roll back to the previous version. If you're using an older driver and still crashing, consider updating to the latest version. **For AMD Users:** If you are on **driver 25.10.2 or newer**, these are known to be problematic for Wilds. Try rolling back to **25.9.1 or 25.9.2**. 
 
