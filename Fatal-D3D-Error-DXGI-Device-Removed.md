@@ -64,7 +64,7 @@ Afterwards, delete your shader.cache2 file:
 - From your Steam's Library, right click the game - Manage - Browse Local Files
 - Find and delete "shader.cache2"
 
-## **4. Check and Adjust your GPU Driver.** 
+### **4. Check and Adjust your GPU Driver.** 
 Some GPU driver versions are more or less stable than others when it comes to Wilds. Note that when it comes to uninstalling a GPU driver, it is recommended to use Display Driver Uninstaller (DDU) to perform a clean uninstall, as manually uninstalling a driver may leave residual files that can interfere with newly installed drivers. To learn how to use DDU, visit the developer's [official guide](https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial).
 
 If you recently updated your driver and then crashes occurred, roll back to the previous version. If you're using an older driver and still crashing, consider updating to the latest version. **For AMD Users:** If you are on **driver 25.10.2 or newer**, these are known to be problematic for Wilds. Try rolling back to [25.9.2](https://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-25-9-2.html). 
