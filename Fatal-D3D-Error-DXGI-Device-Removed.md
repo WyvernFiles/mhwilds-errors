@@ -71,18 +71,20 @@ If you recently updated your driver and then crashes occurred, roll back to the 
 
 ### **5. Check and Adjust your GPU's Clock and Volt settings.**
 
-Overclocking and overvolting, underclocking and undervolting may all lead to a GPU crash error. However, underclocking and undervolting may also fix said error. First, if you changed any of these settings in your GPU, revert to default values and retry playing the game. If you never touched those settings, or reverting did not work, continue reading.
+Overclocking and overvolting may lead to a GPU crash error, and so can underclocking and undervolting. However, a modest undervolt/clock may actually fix said crashes. First, if you changed any of these settings in your GPU, revert to default values and retry playing the game. If you never touched those settings, or reverting did not work, continue reading.
 
 - First, to configure GPU settings, download the Final version of [MSI Afterburner](https://www.msi.com/Landing/afterburner/graphics-cards)
-- During installation, you will usually be offered to install both MSI Afterburner and RivaTuner Statistics Server. The latter is optional. It shows GPU clock speed, temperature, power, and else, and is used for monitoring
+- During installation, you will usually be offered to install both MSI Afterburner and RivaTuner Statistics Server. The latter is optional. It shows GPU clock speed, temperature, power, and else, and is used for monitoring and on-screen display functionality
 - Open MSI Afterburner
 
-**Prerequisite:** MSI Afterburner has many skins, not all show full functionality. To change the skin, find the settings button - Navigate to User Interface tab - Under "User interface skinning properties", ensure the skin is set to **"Default MSI Afterburner v2 skin"**, as this is the skin the guide assumes. You may change this after to your preference. Also, bottom left of the interface, **uncheck "Apply overclock at system startup" for now**.
+**Prerequisite:** MSI Afterburner has many skins, not all show full functionality. To change the skin, find the settings button - Navigate to User Interface tab - Under "User interface skinning properties", ensure the skin is set to **"Default MSI Afterburner v2 skin"**, as this is the skin the guide assumes. You may change this after to your preference. Also, bottom left of the interface, **uncheck 'Apply overclocking at system startup' for now**.
 
 - Bottom right of the interface, you can click Reset to undo any previously applied changes
 - Beginning with clock reduction, find the "Core Clock (MHz)" slider, and lower it by -100 MHz, but do not save yet
 - Click apply, then try launching and playing the game
-- If this reduction stops the crashes, you may save the change. Click the
+- If this reduction stops the crashes for a full session or two, you may save the change. Click the Save button, then click one of the flashing profile numbers. Check "Apply overclocking at system startup", then navigate to settings, and ensure "Start with Windows" is enabled. Now, Afterburner will automatically launch by itself when you boot your PC, and immediately apply the saved profile
+- If the reduction does not stop the crashes, further reduce Core Clock by -150MHz, and try again. If the crashes persist, you may try -200MHz
+- If the game continues to crash after a -200MHz decrease, reset the changes, and proceed to the next step
 
 
 
