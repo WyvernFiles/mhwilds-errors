@@ -80,8 +80,9 @@ Overclocking and overvolting, underclocking and undervolting may all lead to a G
 **Prerequisite:** MSI Afterburner has many skins, not all show full functionality. To change the skin, find the settings button - Navigate to User Interface tab - Under "User interface skinning properties", ensure the skin is set to **"Default MSI Afterburner v2 skin"**, as this is the skin the guide assumes. You may change this after to your preference. Also, bottom left of the interface, **uncheck "Apply overclock at system startup" for now**.
 
 - Bottom right of the interface, you can click Reset to undo any previously applied changes
-- Beginning with clock reduction, find the "Core Clock (MHz)" slider, and lower it by -100 MHz
+- Beginning with clock reduction, find the "Core Clock (MHz)" slider, and lower it by -100 MHz, but do not save yet
 - Click apply, then try launching and playing the game
+- If this reduction stops the crashes, you may save the change. Click the
 
 
 
