@@ -1,7 +1,7 @@
 
-## This page concerns Intel CPU Gen 13/14 owners only.
+## This page concerns Intel CPU Gen 13th/14th owners only.
 
-Certain Intel CPUs belonging to Generations 13th and 14th are susceptible to instability, as some may contain a documented manufacturing defect. If the CPU is affected but not degraded, **a BIOS update** may resolve the issue. If it suffers from degradation, a workaround through the **Intel Extreme Tuning Utility application (XTU)** exists.
+Certain Intel CPUs belonging to Generations 13th and 14th are susceptible to instability, as they may contain a documented manufacturing defect. If the CPU is affected but not degraded, **a BIOS update** may resolve the issue. If it suffers from degradation, a workaround through the **Intel Extreme Tuning Utility application (XTU)** exists.
 
 First, you must ensure your **BIOS is updated to the latest version** available, since Intel released an update aimed at fixing unstable 13th/14th Gen CPUs.
 
@@ -18,18 +18,21 @@ First, you must find your **motherboard's manufacturer and specific product**.
 If a BIOS update does not resolve the crash, continue reading.
 
 ### **2. Lower Performance Core Ratio through Intel XTU.**
+High frequencies (GHz) on 13th/14th Intel CPUs may cause instability, and thus reducing them may stabilize a degraded CPU.
 
 **Prerequisite: Intel XTU requires an unlocked processor and a chipset that supports full overclocking.** To learn whether you possess those:
 
 - On your PC, search for System Information
 - Inside, find "Processor"
 
-If it does not contain a suffix, or contains only an F (i.e. 13th Gen Intel(R) Core(TM) i7-13700F), then it is a locked processor, and you must navigate to []()
+If it does not end in a suffix, or contains only an F (i.e. 13th Gen Intel(R) Core(TM) i7-13700F), then it is a locked processor, and you must navigate to [Fatal-D3D-Error-DXGI-Device-Removed](https://github.com/WyvernFiles/mhwilds-errors/blob/main/Fatal-D3D-Error-DXGI-Device-Removed.md) to try general solutions. Otherwise, if it ends with the following suffixes: K/KF/KS (i.e. 13th Gen Intel(R) Core(TM) i7-13700K), it is an unlocked processor. If your is unlocked, find "BaseBoard Product" in the same page. If it's a Z-series motherboard (i.e. ROG STRIX Z790-F GAMING WIFI II), then it is compatible with XTU.
 
--If it contains the following suffixes: K/KF/KS, (i.e. 13th Gen Intel(R) Core(TM) i7-13700K) it is an unlocked processor.
-High frequencies (GHz) on 13th/14th Intel CPUs may cause instability, and thus reducing them may stabilize a degraded CPU. To do so:
+If both your processor and motherboard are compatible with XTU, proceed to next steps:
 
-- Open Intel XTU. You can download it [here](https://www.intel.com/content/www/us/en/download/17881/intel-extreme-tuning-utility-intel-xtu.html). Read the detailed description to learn which version you must download according to your CPU's Generation. 
-
+- Open Intel XTU, or download it [here](https://www.intel.com/content/www/us/en/download/17881/intel-extreme-tuning-utility-intel-xtu.html). At the time of writing, the XTUSetup version compatible with CPU Generations 13th/14th is 7.14
+- In the application, navigate to Advanced Tuning
+- Find "Performance Core Ratio" and write the current value somewhere first
+- Reduce the ratio by a few points from its current value, then apply changes. Some reported reducing the ratio from 55x to 54, 53, or 52 stabilized the CPU. I do not recommend reducing the value below 52x.
+- Launch the game and test whether crashes persist. If they do, revert Performance Core Ratio to original value, and navigate to [Fatal-D3D-Error-DXGI-Device-Removed](https://github.com/WyvernFiles/mhwilds-errors/blob/main/Fatal-D3D-Error-DXGI-Device-Removed.md) to try general solutions.
 
 
