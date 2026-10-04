@@ -5,8 +5,9 @@
 **Likely Cause:** Incompatible drivers, GPU overclocking, external overlays and recorders, or certain in-game settings.
 
 
-### General Fixes (try in order):
-**1. Disable Frame Generation** The game may be sensitive to Frame Gen features on certain GPUs. We will first try disabling Frame Generation in both Monster Hunter Wilds and your GPU's software to ensure it does not override the in-game setting.
+## General Fixes (try in order):
+### **1. Disable Frame Generation.** 
+The game may be sensitive to Frame Gen features on certain GPUs. We will first try disabling Frame Generation in both Monster Hunter Wilds and your GPU's software to ensure it does not override the in-game setting.
 
 **Disabling Frame Generation in-game:** 
 
@@ -37,7 +38,8 @@
 
 After disabling Frame Generation, try launching the game. If crashes persist, continue reading.
 
-**2. Disable Overlays and recorders.** If you have an overlay on, such as Steam's or Discord's, or a recorder like NVIDIA's Shadowplay, try turning them off. Such software interferes technically with games, and may break things.
+### **2. Disable Overlays and Recorders.** 
+If you have an overlay on, such as Steam's or Discord's, or a recorder like NVIDIA's Shadowplay, try turning them off. Such software interferes technically with games, and may break things.
 
 - **Steam Overlay:** Open Steam - Settings - In Game - Ensure "Enable the Steam Overlay" is unchecked
 
@@ -50,3 +52,20 @@ After disabling Frame Generation, try launching the game. If crashes persist, co
 - **ShadowPlay:** Open NVIDIA App - Settings - Ensure "NVIDIA Overlay"" is off
 
 - **AMD ReLive:** Open Adrenalin - Settings - Preferences - Ensure "In-Game Overlay" is off
+
+### **3. Verify Game Files, then Delete shader.cache2 File.** 
+A GPU crash can occur due to things like a corrupted shader cache file. If a GPU driver update changed how shaders are compiled, an old cache would be incompatible, for example. If the game tries to read this corrupted data, it may crash.
+
+- Open Steam and go to your Library
+- Right click the game - Properties - Installed Files - "Verify intergrity of game files"
+
+Afterwards, delete your shader.cache2 file:
+
+- From your Steam's Library, right click the game - Manage - Browse Local Files
+- Find and delete "shader.cache2"
+
+## **4. Check and Adjust your GPU Driver.** 
+Some GPU driver versions are more or less stable than others when it comes to Wilds.
+
+If you recently updated your driver and then crashes occurred, roll back to the previous version. If you're using an older driver and still crashing, consider updating to the latest version. **For AMD Users:** If you are on **driver 25.10.2 or newer**, these are known to be problematic for Wilds. Try rolling back to **25.9.1 or 25.9.2**. You will need to use Display Driver Uninstaller (DDU) to perform a clean uninstall, as manually uninstalling a driver may leave residual files that can interfere with future driver performance. To learn how to use DDU to uninstall your current driver, then install a new one, navigate to [How to use Display Drive Uninstaller]
+
