@@ -4,7 +4,7 @@
 
 **Likely Cause:** Incompatible drivers, GPU overclocking, external overlays and recorders, or certain in-game settings.
 
-
+**Note for Intel CPU's (13th/14th Gen only):** While this error is GPU-related, These CPUs come with a manufacturing defect with a known root cause that may cause this exact error. Intel confirmed that elevated operating voltage causes instability in these processors, and may lead to game crashes. Before reading below, if you own such CPUs, you may try the fixes in [Intel 13th/14th Gen CPU]()
 ## General Fixes (try in order):
 ### **1. Disable Frame Generation.** 
 The game may be sensitive to Frame Gen features on certain GPUs. We will first try disabling Frame Generation in both Monster Hunter Wilds and your GPU's software to ensure it does not override the in-game setting.
