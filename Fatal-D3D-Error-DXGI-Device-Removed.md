@@ -67,5 +67,22 @@ Afterwards, delete your shader.cache2 file:
 ### **4. Check and Adjust your GPU Driver.** 
 Some GPU driver versions are more or less stable than others when it comes to Wilds. Note that when it comes to uninstalling a GPU driver, it is recommended to use Display Driver Uninstaller (DDU) to perform a clean uninstall, as manually uninstalling a driver may leave residual files that can interfere with newly installed drivers. To learn how to use DDU, visit the developer's [official guide](https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial).
 
-If you recently updated your driver and then crashes occurred, roll back to the previous version. If you're using an older driver and still crashing, consider updating to the latest version. **For AMD Users:** If you are on **driver 25.10.2 or newer**, these are known to be problematic for Wilds. Try rolling back to [25.9.2](https://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-25-9-2.html). 
+If you recently updated your driver and then crashes occurred, roll back to the previous version. If you're using an older driver and still crashing, consider updating to the latest version. **For AMD Users:** If you are on **driver 25.10.2 or newer**, these are known to be problematic for Wilds. Try rolling back to [25.9.2](https://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-25-9-2.html).
+
+### **5. Check and Adjust your GPU's Clock and Volt settings.**
+
+Overclocking and overvolting, underclocking and undervolting may all lead to a GPU crash error. However, underclocking and undervolting may also fix said error. First, if you changed any of these settings in your GPU, revert to default values and retry playing the game. If you never touched those settings, or reverting did not work, continue reading.
+
+- First, to configure GPU settings, download the Final version of [MSI Afterburner](https://www.msi.com/Landing/afterburner/graphics-cards)
+- During installation, you will usually be offered to install both MSI Afterburner and RivaTuner Statistics Server. The latter is optional. It shows GPU clock speed, temperature, power, and else, and is used for monitoring
+- Open MSI Afterburner
+
+**Prerequisite:** MSI Afterburner has many skins, not all show full functionality. To change the skin, find the settings button - Navigate to User Interface tab - Under "User interface skinning properties", ensure the skin is set to **"Default MSI Afterburner v2 skin"**, as this is the skin the guide assumes. You may change this after to your preference. Also, bottom left of the interface, **uncheck "Apply overclock at system startup" for now**.
+
+- Bottom right of the interface, you can click Reset to undo any previously applied changes
+- Beginning with clock reduction, find the "Core Clock (MHz)" slider, and lower it by -100 MHz
+- Click apply, then try launching and playing the game
+
+
+
 
