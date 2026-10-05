@@ -105,7 +105,7 @@ If this reduction stops the crashes for a full session or two, you may save the 
 - Press CTRL + F to open the Voltage/Frequency Curve Editor
 - You will see many square-shaped points. The Y axis corresponds to clock speed (MHz), and the X axis corresponds to Voltage (mV). Find the point closest to your GPU's boost clock speed, and if possible, move it as close as you can to it. This is your original point
 - Next, lower your original point's voltage by moving it to the left, lowering the voltage up to -50 from its default value
-- Move all points sitting right of the original point so that they sit at the exact same frequency as the original point. Do not change their voltage, only their frequency to match the original point
+- Move all points sitting right of the original point so that they sit at the exact same clock speed as the original point. Do not change their voltage, only their frequency to match the original point
 - Exit the Editor, click Apply, then try launching the game
 - If the game no longer crashes, you may save your MSI Afterburner's undervolt settings to one of five profile presets, and ensure "Apply overclocking on system startup" and "Start with Windows" are both applied. If crashes persist, reset your changes to default values.
 
