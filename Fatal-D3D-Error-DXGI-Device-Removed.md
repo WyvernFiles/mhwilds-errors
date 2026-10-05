@@ -1,10 +1,8 @@
-## **UNFINISHED.**
-
 **Symptoms:** At some point while launching the game or playing it, it suddenly crashes with the error noting a "GPU Crash."
 
 **Likely Cause:** Incompatible drivers, GPU overclocking, external overlays and recorders, or certain in-game settings.
 
-**Note for Intel CPU's (13th/14th Gen only):** While this error is GPU-related, some of these CPUs come with a manufacturing defect that has a known root cause which may cause this exact error. Before reading below, if you own such CPUs, you may try the fixes in [Intel 13th & 14th Gen CPUs Solution and Workaround](https://github.com/WyvernFiles/mhwilds-errors/blob/main/Intel%2013th%20%26%2014th%20Gen%20CPUs%20Solution%20and%20Workaround.md) first.
+**Note for Intel CPUs (13th/14th Gen only):** While this error is GPU-related, some of these CPUs come with a manufacturing defect that has a known root cause which may cause this exact error. Before reading below, if you own such CPUs, you may try the fixes in [Intel 13th & 14th Gen CPUs Solution and Workaround](https://github.com/WyvernFiles/mhwilds-errors/blob/main/Intel%2013th%20%26%2014th%20Gen%20CPUs%20Solution%20and%20Workaround.md) first.
 ## General Fixes (try in order):
 ### **1. Disable Frame Generation.** 
 The game may be sensitive to Frame Gen features on certain GPUs. We will first try disabling Frame Generation in both Monster Hunter Wilds and your GPU's software to ensure it does not override the in-game setting.
@@ -49,7 +47,7 @@ If you have an overlay on, such as Steam's or Discord's, or a recorder like NVID
 
 - **Xbox Game Bar:** Open Windows Settings (Win + I) - Navigate to Gaming, then Game Bar, and turn it off
 
-- **ShadowPlay:** Open NVIDIA App - Settings - Ensure "NVIDIA Overlay"" is off
+- **ShadowPlay:** Open NVIDIA App - Settings - Ensure "NVIDIA Overlay" is off
 
 - **AMD ReLive:** Open Adrenalin - Settings - Preferences - Ensure "In-Game Overlay" is off
 
@@ -71,6 +69,16 @@ Some GPU driver versions are more or less stable than others when it comes to Wi
 If you recently updated your driver and then crashes occurred, roll back to the previous version. If you're using an older driver and still crashing, consider updating to the latest version. **For AMD Users:** If you are on **driver 25.10.2 or newer**, these are known to be problematic for Wilds. Try rolling back to [25.9.2](https://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-25-9-2.html).
 
 ### **5. Update your BIOS.**
+First, you must find your motherboard's manufacturer and specific product.
+
+On Windows:
+
+- On your PC, search for "System Information"
+- If you're on a desktop: note your "BaseBoard Manufacturer", "BaseBoard Product", and "BaseBoard Version" if present. If you're on a laptop: note your "System Manufacturer" and "System Model"
+- Search the internet for your manufacturer's official support page
+- Enter the support page - Find the BIOS section - Download your system's latest BIOS version and follow the installation instructions. Be careful not to interrupt installation
+
+If a BIOS update does not resolve the crash, continue reading.
 
 ### **6. Check and Adjust your GPU's Clock and Volt settings.**
 
@@ -95,13 +103,11 @@ If this reduction stops the crashes for a full session or two, you may save the 
 - First, you must find your GPU's boost clock speed. Using a browser, search for your GPU model's specified boost clock value in MHz (i.e. RTX 5060 Boost Clock = nearly 2500MHz)
 - Open MSI Afterburner and ensure it's reset to default values
 - Press CTRL + F to open the Voltage/Frequency Curve Editor
-- You will see many square-shaped points. The Y axis corresponds to clock speed (MHz), and the X axis corresponds to Voltage (Mv). Find the point closest to your GPU's boost clock speed, and if possible, move it as close as you can to it. This is your original point
-- Next, lower your original point's voltage by moving it to the left, lowering the voltage up to -50 from it's default value
+- You will see many square-shaped points. The Y axis corresponds to clock speed (MHz), and the X axis corresponds to Voltage (mV). Find the point closest to your GPU's boost clock speed, and if possible, move it as close as you can to it. This is your original point
+- Next, lower your original point's voltage by moving it to the left, lowering the voltage up to -50 from its default value
 - Move all points sitting right of the original point so that they sit at the exact same frequency as the original point. Do not change their voltage, only their frequency to match the original point
 - Exit the Editor, click Apply, then try launching the game
-
-If the game remains stable, save the changes to one of your 5 profile presets. Otherwise, continue reading
-
+- If the game no longer crashes, you may save your MSI Afterburner's undervolt settings to one of five profile presets, and ensure "Apply overclocking on system startup" and "Start with Windows" are both applied. If crashes persist, reset your changes to default values.
 
 
 
