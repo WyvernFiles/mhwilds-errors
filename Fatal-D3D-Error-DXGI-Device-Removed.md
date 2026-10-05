@@ -63,13 +63,16 @@ Afterwards, delete your shader.cache2 file:
 
 - From your Steam's Library, right click the game - Manage - Browse Local Files
 - Find and delete "shader.cache2"
+- You may also delete your "config.ini" file, though this will reset your game's current settings, and is a low-confidence fix
 
 ### **4. Check and Adjust your GPU Driver.** 
 Some GPU driver versions are more or less stable than others when it comes to Wilds. Note that when it comes to uninstalling a GPU driver, it is recommended to use Display Driver Uninstaller (DDU) to perform a clean uninstall, as manually uninstalling a driver may leave residual files that can interfere with newly installed drivers. To learn how to use DDU, visit the developer's [official guide](https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial).
 
 If you recently updated your driver and then crashes occurred, roll back to the previous version. If you're using an older driver and still crashing, consider updating to the latest version. **For AMD Users:** If you are on **driver 25.10.2 or newer**, these are known to be problematic for Wilds. Try rolling back to [25.9.2](https://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-25-9-2.html).
 
-### **5. Check and Adjust your GPU's Clock and Volt settings.**
+### **5. Update your BIOS.**
+
+### **6. Check and Adjust your GPU's Clock and Volt settings.**
 
 Overclocking and overvolting may lead to a GPU crash error, and so can underclocking and undervolting. However, a modest undervolt/clock may actually fix said crashes. First, if you changed any of these settings in your GPU, revert to default values and retry playing the game. If you never touched those settings, or reverting did not work, continue reading.
 
@@ -85,7 +88,19 @@ Overclocking and overvolting may lead to a GPU crash error, and so can undercloc
 If this reduction stops the crashes for a full session or two, you may save the change. Click the Save button, then click one of the flashing profile numbers. Check "Apply overclocking at system startup", then navigate to settings, and ensure "Start with Windows" is enabled. Now, Afterburner will automatically launch by itself when you boot your PC, and immediately apply the saved profile by itself
 
 - If the reduction does not stop the crashes, further reduce Core Clock by -150MHz, and try again. If the crashes persist, you may try -200MHz
-- If the game continues to crash after a -200MHz decrease, reset the changes, and proceed to the next step
+- If the game continues to crash after a -200MHz decrease, reset the changes, and continue reading to try undervolting.
+
+**Undervolting** is reducing the voltage supplied to your GPU. This reduces generated heat, which means less risk of hardware throttling due to high temperatures and quieter fans. Undervolting may cause instability if pushed too far. There are reports of undervolting fixing GPU crash errors in Wilds.
+
+- First, you must find your GPU's boost clock speed. Using a browser, search for your GPU model's specified boost clock value in MHz (i.e. RTX 5060 Boost Clock = nearly 2500MHz)
+- Open MSI Afterburner and ensure it's reset to default values
+- Press CTRL + F to open the Voltage/Frequency Curve Editor
+- You will see many square-shaped points. The Y axis corresponds to clock speed (MHz), and the X axis corresponds to Voltage (Mv). Find the point closest to your GPU's boost clock speed, and if possible, move it as close as you can to it. This is your original point
+- Next, lower your original point's voltage by moving it to the left, lowering the voltage up to -50 from it's default value
+- Move all points sitting right of the original point so that they sit at the exact same frequency as the original point. Do not change their voltage, only their frequency to match the original point
+- Exit the Editor, click Apply, then try launching the game
+
+If the game remains stable, save the changes to one of your 5 profile presets. Otherwise, continue reading
 
 
 
