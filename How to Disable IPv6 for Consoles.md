@@ -28,6 +28,5 @@ Here are other locations where IPv6 may be found:
 
 After you find the settings, disabling IPv6 is usually as simple as unchecking a checkbox/toggle or a dropdown menu where you select "Disabled." Save the changes, and reboot your router to ensure the changes are fully applied.
 
-If you cannot find an option to disable IPv6, you may call your Internet Service Provider and ask them to disable it from their end.
-
+If you cannot find an option to disable IPv6, you may call your Internet Service Provider and ask them to disable it from their end. If disabling IPv6 did not resolve the error, remember to re-enable it for general compatibility's sake.
 
