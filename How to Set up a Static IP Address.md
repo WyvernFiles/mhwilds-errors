@@ -39,8 +39,8 @@ After you log into your router's admin page, you will need to **find the "Create
 
 After you find "Create DHCP Reservation":
 
-- Press it
+- Click it
 - Add your device's MAC and IP Address when prompted
 - Save changes
 
-Now, you should have reserved a static IP address for your device, while leaving its own network settings automatic and reliable. Return to [Manual Port Forwarding](Manual%20Port%20Forwarding.md) and continue reading to learn how to **open the specific ports Capcom's servers need.**
+Now, you should have reserved a static IP address for your device, while leaving its own network settings automatic and reliable. Return to [Manual Port Forwarding](Manual%20Port%20Forwarding.md) and continue reading to learn how to **open the specific ports Monster Hunter Wilds needs.**
