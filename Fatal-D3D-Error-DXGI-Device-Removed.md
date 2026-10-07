@@ -1,6 +1,8 @@
-**Symptoms:** At some point while launching the game or playing it, it suddenly crashes with the error noting a "GPU Crash".
+### **Briefing:** 
+At some point while launching the game or playing it, it suddenly crashes with the error noting a "GPU Crash".
 
-**Likely Cause:** Frame Generation, corrupted shader caches, incompatible drivers, external overlays and recorders, outdated BIOS versions, or GPU overclocking.
+### **Likely Cause:**
+Frame Generation, corrupted shader caches, incompatible drivers, external overlays and recorders, outdated BIOS versions, or GPU overclocking.
 
 **Note for Intel CPUs (13th/14th Gen only):** While this error is GPU-related, some of these CPUs come with a manufacturing defect that has a known root cause which may cause this exact error. Before reading below, if you own such CPUs, you may try the fixes in [Intel 13th & 14th Gen CPUs Solution and Workaround](https://github.com/WyvernFiles/mhwilds-errors/blob/main/Intel%2013th%20%26%2014th%20Gen%20CPUs%20Solution%20and%20Workaround.md) first.
 ## General Fixes (try in order):
