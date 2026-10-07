@@ -1,5 +1,5 @@
 
-**What is a Port?**
+**What is a Network Port?**
 
 A network port is a number that identifies one side of a connection between two computers. Computers use port numbers to determine to which process or application a message should be delivered. Routers block most ports by default for security purposes. If a port is blocked, messages cannot be delivered.
 
