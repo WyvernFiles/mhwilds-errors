@@ -10,3 +10,5 @@ List of Errors:
 [R1141-TAD-W72T:10001](https://github.com/WyvernFiles/mhwilds-errors/blob/main/R1141-TAD-W72T%3A10001.md)
 
 [Fatal D3D error (24, DXGI_ERROR_DEVICE_REMOVED](https://github.com/WyvernFiles/mhwilds-errors/blob/main/Fatal-D3D-Error-DXGI-Device-Removed.md)
+
+[0x140000000 + 0xa4d69d0](https://github.com/WyvernFiles/mhwilds-errors/edit/main/0x140000000%20%2B%200xa4d69d0.md#briefing)
