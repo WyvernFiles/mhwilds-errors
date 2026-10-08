@@ -111,5 +111,6 @@ If this reduction stops the crashes for a full session or two, you may save the 
 - Exit the Editor, click Apply, then try launching the game
 - If the game no longer crashes, you may save your MSI Afterburner's undervolt settings to one of five profile presets, and ensure "Apply overclocking on system startup" and "Start with Windows" are both applied. If crashes persist, reset your changes to default values.
 
-
+### **If the fixes don't work:**
+The problem might be outside your control. You can try reporting the problem to [Capcom Support](https://www.monsterhunter.com/support/wilds/en/form/consent) by filling out their technical inquiry contact form. Include your platform, and the troubleshooting steps you already took.
 
