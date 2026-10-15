@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initial scale="1" />
+
+    <title>Static IP Setup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="topbar">
+      <a href="/" class="nav-btn">Home</a>
+      <a href="About.html" class="nav-btn">About</a>
+    </nav>
+    <div class="layout">
+      <nav class="sidebar">
+        <input
+          type="text"
+          id="searchBar"
+          placeholder="Search errors..."
+          oninput="filterErrors()"
+        />
+        <h2>Errors & Resources</h2>
+        <ul id="errorList">
+          <li><a href="R31A6-0-03.html">R31A6-0-0:3</a></li>
+          <li><a href="R1141-TAD-W72T10001.html">R1141-TAD-W72T:10001</a></li>
+          <li>
+            <a href="Fatal-D3D-Error-DXGI-Device-Removed.html"
+              >Fatal D3D error</a
+            >
+          </li>
+          <li>
+            <a href="0x140000000-0xa4d69d0.html">0x140000000 + 0xa4d69d0</a>
+          </li>
+          <li>
+            <a href="Manual Port Forwarding.html">Manual Port Forwarding</a>
+          </li>
+          <li>
+            <a href="Intel 13th & 14th Gen CPUs Solution and Workaround.html"
+              >Intel 13th & 14th Gen CPUs Solution and Workaround</a
+            >
+          </li>
+          <li>
+            <a href="How to Disable IPv6 for Consoles.html"
+              >How to Disable IPv6 for Consoles</a
+            >
+          </li>
+          <li>
+            <a href="How to Access your Router's Admin Page.html"
+              >How to Access your Router's Admin Page</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="main">
+        <h1>Static IP Setup (Required Before Port Forwarding)</h1>
+
+        <p>
+          A static IP address is required for port forwarding to remain
+          associated with the correct device, as a dynamic IP address may simply
+          change the IP eventually, breaking the port forwarding rules.
+        </p>
+
+        <p>To set up a static IP address:</p>
+
+        <p><b>On Playstation:</b></p>
+        <ul>
+          <li>Go to Settings</li>
+          <li>Go to Network - View Connection Status</li>
+          <li>Take note of your IP Address, MAC Address, and Gateway</li>
+        </ul>
+
+        <p><b>On Xbox Series X|S / Xbox One:</b></p>
+        <ul>
+          <li>Press the Xbox button to open the guide</li>
+          <li>
+            Go to Profile &amp; system &gt; Settings &gt; General &gt; Network
+            settings
+          </li>
+          <li>Select Advanced settings</li>
+          <li>
+            Take note of your IP address, MAC address (also called Wireless MAC
+            Address or Ethernet MAC Address,) and Gateway
+          </li>
+        </ul>
+
+        <p><b>On PC (Windows):</b></p>
+        <ul>
+          <li>Press Win + R</li>
+          <li>Type "cmd" and press Enter</li>
+          <li>Type ipconfig /all and press Enter</li>
+          <li>Find your active adapter (Ethernet or Wi-Fi)</li>
+          <li>
+            Take note of your IPv4 Address, Physical Address (this is your MAC
+            Address,) and Default Gateway
+          </li>
+        </ul>
+
+        <p>
+          Then, you will need to <b>log into your router.</b> To learn how,
+          visit
+          <a href="How to Access your Router's Admin Page.html"
+            >How to Access your Router's Admin Page</a
+          >.
+        </p>
+
+        <p>
+          After you log into your router's admin page, you will need to
+          <b>find the "Create DHCP Reservation" function.</b> It is usually
+          found in the following tabs, or ones similarly named:
+        </p>
+
+        <ul>
+          <li>LAN</li>
+          <li>Address/DHCP Reservation</li>
+          <li>Manually Assigned IP</li>
+          <li>Static DHCP</li>
+          <li>DHCP Static Leases</li>
+          <li>Reserved IP</li>
+        </ul>
+
+        <p>After you find "Create DHCP Reservation":</p>
+        <ul>
+          <li>Click it</li>
+          <li>Add your device's MAC and IP Address when prompted</li>
+          <li>Save changes</li>
+        </ul>
+
+        <p>
+          Now, you should have reserved a static IP address for your device,
+          while leaving its own network settings automatic and reliable. Return
+          to
+          <a href="Manual Port Forwarding.html">Manual Port Forwarding</a> and
+          continue reading to learn how to
+          <b>open the specific ports Monster Hunter Wilds needs.</b>
+        </p>
+        <script>
+          function filterErrors() {
+            var input = document
+              .getElementById("searchBar")
+              .value.toLowerCase();
+            var list = document.getElementById("errorList");
+            var items = list.getElementsByTagName("li");
+
+            for (var i = 0; i < items.length; i++) {
+              var text = items[i].textContent.toLowerCase();
+              if (text.includes(input)) {
+                items[i].style.display = "";
+              } else {
+                items[i].style.display = "none";
+              }
+            }
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

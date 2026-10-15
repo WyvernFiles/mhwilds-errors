@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initial scale="1" />
+
+    <title>Fatal-D3D-Error-DXGI-Device-Removed</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="topbar">
+      <a href="/" class="nav-btn">Home</a>
+      <a href="About.html" class="nav-btn">About</a>
+    </nav>
+    <div class="layout">
+      <nav class="sidebar">
+        <input
+          type="text"
+          id="searchBar"
+          placeholder="Search errors..."
+          oninput="filterErrors()"
+        />
+        <h2>Errors & Resources</h2>
+        <ul id="errorList">
+          <li><a href="R31A6-0-03.html">R31A6-0-0:3</a></li>
+          <li><a href="R1141-TAD-W72T10001.html">R1141-TAD-W72T:10001</a></li>
+          <li>
+            <a href="0x140000000-0xa4d69d0.html">0x140000000 + 0xa4d69d0</a>
+          </li>
+          <li>
+            <a href="Manual Port Forwarding.html">Manual Port Forwarding</a>
+          </li>
+          <li>
+            <a href="Intel 13th & 14th Gen CPUs Solution and Workaround.html"
+              >Intel 13th & 14th Gen CPUs Solution and Workaround</a
+            >
+          </li>
+          <li>
+            <a href="How to Set up a Static IP Address.html"
+              >How to Set up a Static IP Address</a
+            >
+          </li>
+          <li>
+            <a href="How to Disable IPv6 for Consoles.html"
+              >How to Disable IPv6 for Consoles</a
+            >
+          </li>
+          <li>
+            <a href="How to Access your Router's Admin Page.html"
+              >How to Access your Router's Admin Page</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="main">
+        <h1>Fatal-D3D-Error-DXGI-Device-Removed</h1>
+
+        <h2>Briefing:</h2>
+        <p>
+          At some point while launching the game or playing it, it suddenly
+          crashes with the error noting a "GPU Crash".
+        </p>
+
+        <h2>Likely Cause:</h2>
+        <p>
+          Frame Generation, corrupted shader caches, incompatible drivers,
+          external overlays and recorders, outdated BIOS versions, or GPU
+          overclocking.
+        </p>
+
+        <p><b>Note for Intel CPUs (13th/14th Gen only):</b></p>
+        <p>
+          While this error is GPU-related, some of these CPUs come with a
+          manufacturing defect that has a known root cause which may cause this
+          exact error. Before reading below, if you own such CPUs, you may try
+          the fixes in
+          <a href="Intel 13th & 14th Gen CPUs Solution and Workaround.html"
+            >Intel 13th & 14th Gen CPUs Solution and Workaround</a
+          >
+          first.
+        </p>
+        <h2>General Fixes (try in order):</h2>
+        <h3>1. Disable Frame Generation.</h3>
+        <p>
+          The game may be sensitive to Frame Gen features on certain GPUs. We
+          will first try disabling Frame Generation in both Monster Hunter Wilds
+          and your GPU's software to ensure it does not override the in-game
+          setting.
+        </p>
+
+        <p><b>Disabling Frame Generation in-game:</b></p>
+        <ul>
+          <li>Open the Settings menu</li>
+          <li>Navigate to the Graphics tab</li>
+          <li>Look for the Frame Generation toggle and turn it off</li>
+        </ul>
+        <p>
+          <b>Note:</b> Some have reported that disabling the in-game Frame Gen
+          toggle has no effect. If this is your case, you can disable Frame Gen
+          by force through editing the game's configuration file:
+        </p>
+        <ul>
+          <li>Open Steam and go to Library</li>
+          <li>
+            Right click Monster Hunter Wilds, go to Manage, then Browse Local
+            Files
+          </li>
+          <li>Find the file named "config" or "config.ini" and open it</li>
+          <li>
+            Inside, find the line that says "FrameGenerationMode" (In Notepad,
+            you can go to Edit, then Find, then enter "framegeneration" to
+            immediately find the line)
+          </li>
+          <li>
+            If it's not set to Off, rewrite it to: "FrameGenerationMode=Off"
+          </li>
+          <li>Go to File, then Save</li>
+        </ul>
+        <p><b>Through NVIDIA App:</b></p>
+        <ul>
+          <li>Go to Graphics and select Monster Hunter Wilds</li>
+          <li>
+            Look for a setting called DLSS Override - Frame Generation mode
+          </li>
+          <li>Set it to Off</li>
+        </ul>
+        <p><b>Through AMD Software: Adrenalin Edition:</b></p>
+        <ul>
+          <li>Go to the Gaming tab and select Monster Hunter Wilds</li>
+          <li>Find the setting for AMD Fluid Motion Frames. Set to Disabled</li>
+          <li>
+            Check the Global Graphics settings and make sure AFMF (AMD Fluid
+            Motion Frames) is not enabled system-wide
+          </li>
+        </ul>
+        <p>
+          After disabling Frame Generation, try launching the game. If crashes
+          persist, continue reading.
+        </p>
+
+        <h3>2. Disable Overlays and Recorders.</h3>
+        <p>
+          If you have an overlay on, such as Steam's or Discord's, or a recorder
+          like NVIDIA's Shadowplay, try turning them off. Such software
+          interferes technically with games, and may break things.
+        </p>
+        <ul>
+          <li>
+            <b>Steam Overlay:</b> Open Steam - Settings - In Game - Ensure
+            "Enable the Steam Overlay" is unchecked
+          </li>
+        </ul>
+        <p>
+          <b>Note:</b> You can disable the steam overlay per-game instead
+          through entering your library, right clicking the game, selecting
+          Properties, and then unchecking the setting.
+        </p>
+        <ul>
+          <li>
+            <b>Discord Overlay:</b> Open Discord - Click the gear icon (User
+            Settings) next to your name - Scroll down to Activity Settings, then
+            Game Overlay - Ensure "Enable in-game overlay" is toggled off
+          </li>
+
+          <li>
+            <b>Xbox Game Bar:</b> Open Windows Settings (Win + I) - Navigate to
+            Gaming, then Game Bar, and turn it off
+          </li>
+
+          <li>
+            <b>ShadowPlay:</b> Open NVIDIA App - Settings - Ensure "NVIDIA
+            Overlay" is off
+          </li>
+
+          <li>
+            <b>AMD ReLive:</b> Open Adrenalin - Settings - Preferences - Ensure
+            "In-Game Overlay" is off
+          </li>
+        </ul>
+        <h3>3. Verify Game Files, then Delete shader.cache2 File.</h3>
+        <p>
+          A GPU crash can occur due to things like a corrupted shader cache
+          file. If a GPU driver update changed how shaders are compiled, an old
+          cache would be incompatible, for example. If the game tries to read
+          this corrupted data, it may crash
+        </p>
+        <ul>
+          <li>Open Steam and go to your Library</li>
+          <li>
+            Right click the game - Properties - Installed Files - "Verify
+            integrity of game files"
+          </li>
+        </ul>
+        <p>Afterwards, delete your shader.cache2 file:</p>
+        <ul>
+          <li>
+            From your Steam's Library, right click the game - Manage - Browse
+            Local Files
+          </li>
+          <li>Find and delete "shader.cache2"</li>
+          <li>
+            You may also delete your "config.ini" file, though this will reset
+            your game's current settings, and is a low-confidence fix
+          </li>
+        </ul>
+        <h3>4. Check and Adjust your GPU Driver.</h3>
+        <p>
+          Some GPU driver versions are more or less stable than others when it
+          comes to Wilds. Note that when it comes to uninstalling a GPU driver,
+          it is recommended to use Display Driver Uninstaller (DDU) to perform a
+          clean uninstall, as manually uninstalling a driver may leave residual
+          files that can interfere with newly installed drivers. To learn how to
+          use DDU, visit the developer's
+          <a
+            href="https://www.wagnardsoft.com/content/How-use-Display-Driver-Uninstaller-DDU-Guide-Tutorial"
+            >official guide</a
+          >.
+        </p>
+
+        <p>
+          If you recently updated your driver and then crashes occurred, roll
+          back to the previous version. If you're using an older driver and
+          still crashing, consider updating to the latest version.
+          <b>For AMD Users:</b> If you are on <b>driver 25.10.2 or newer</b>,
+          these are known to be problematic for Wilds. Try rolling back to
+          <a
+            href="https://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-25-9-2.html"
+            >25.9.2</a
+          >.
+        </p>
+
+        <h3>5. Update your BIOS.</h3>
+        <p>
+          First, you must find your motherboard's manufacturer and specific
+          product.
+        </p>
+
+        <p>On Windows:</p>
+        <ul>
+          <li>On your PC, search for "System Information"</li>
+          <li>
+            If you're on a desktop: note your "BaseBoard Manufacturer",
+            "BaseBoard Product", and "BaseBoard Version" if present. If you're
+            on a laptop: note your "System Manufacturer" and "System Model"
+          </li>
+          <li>
+            Search the internet for your manufacturer's official support page
+          </li>
+          <li>
+            Enter the support page - Find the BIOS section - Download your
+            system's latest BIOS version and follow the installation
+            instructions. Be careful not to interrupt installation
+          </li>
+        </ul>
+        <p>If a BIOS update does not resolve the crash, continue reading.</p>
+
+        <h3>
+          6. Check and Adjust your GPU's Clock and Volt settings (Advanced).
+        </h3>
+
+        <p>
+          Overclocking and overvolting may lead to a GPU crash error, and so can
+          underclocking and undervolting. However, a modest undervolt/clock may
+          actually fix said crashes. First, if you changed any of these settings
+          in your GPU, revert to default values and retry playing the game. If
+          you never touched those settings, or reverting did not work, continue
+          reading.
+        </p>
+        <ul>
+          <li>
+            First, to configure GPU settings, download the Final version of
+            <a href="https://www.msi.com/Landing/afterburner/graphics-cards"
+              >MSI Afterburner</a
+            >
+          </li>
+          <li>
+            During installation, you will usually be offered to install both MSI
+            Afterburner and RivaTuner Statistics Server. The latter is optional.
+            It shows GPU clock speed, temperature, power, other information, and
+            is used for monitoring
+          </li>
+          <li>Open MSI Afterburner</li>
+        </ul>
+        <p>
+          <b>Prerequisite:</b> MSI Afterburner has many skins, not all show full
+          functionality. To change the skin, find the settings button - Navigate
+          to User Interface tab - Under "User interface skinning properties",
+          ensure the skin is set to <b>"Default MSI Afterburner v2 skin"</b>, as
+          this is the skin the guide assumes. You may change this after to your
+          preference. Also, bottom left of the interface,
+          <b>uncheck 'Apply overclocking at system startup' for now</b>. Bottom
+          right of the interface, you can click Reset to undo any previously
+          applied changes to your GPU.
+        </p>
+        <ul>
+          <li>
+            Beginning with clock reduction, find the "Core Clock (MHz)" slider,
+            and lower it by -100 MHz, but do not save yet
+          </li>
+          <li>Click apply, then try launching and playing the game</li>
+        </ul>
+        <p>
+          If this reduction stops the crashes for a full session or two, you may
+          save the change. Click the Save button, then click one of the flashing
+          profile numbers. Check "Apply overclocking at system startup", then
+          navigate to settings, and ensure "Start with Windows" is enabled. Now,
+          Afterburner will automatically launch by itself when you boot your PC,
+          and immediately apply the saved profile by itself
+        </p>
+        <ul>
+          <li>
+            If the reduction does not stop the crashes, further reduce Core
+            Clock by -150MHz, and try again. If the crashes persist, you may try
+            -200MHz
+          </li>
+          <li>
+            If the game continues to crash after a -200MHz decrease, reset the
+            changes, and continue reading to try undervolting.
+          </li>
+        </ul>
+        <p>
+          <b>Undervolting</b> is reducing the voltage supplied to your GPU. This
+          reduces generated heat, which means less risk of hardware throttling
+          due to high temperatures and quieter fans. Undervolting may cause
+          instability if pushed too far. There are reports of undervolting
+          fixing GPU crash errors in Wilds.
+        </p>
+        <ul>
+          <li>
+            First, you must find your GPU's boost clock speed. Using a browser,
+            search for your GPU model's specified boost clock value in MHz (i.e.
+            RTX 5060 Boost Clock = nearly 2500MHz)
+          </li>
+          <li>Open MSI Afterburner and ensure it's reset to default values</li>
+          <li>Press CTRL + F to open the Voltage/Frequency Curve Editor</li>
+          <li>
+            You will see many square-shaped points. The Y axis corresponds to
+            clock speed (MHz), and the X axis corresponds to Voltage (mV). Find
+            the point closest to your GPU's boost clock speed, and if possible,
+            move it as close as you can to it. This is your original point
+          </li>
+          <li>
+            Next, lower your original point's voltage by moving it to the left,
+            lowering the voltage up to -50 from its default value
+          </li>
+          <li>
+            Move all points sitting right of the original point so that they sit
+            at the exact same clock speed as the original point. Do not change
+            their voltage, only their frequency to match the original point
+          </li>
+          <li>Exit the Editor, click Apply, then try launching the game</li>
+          <li>
+            If the game no longer crashes, you may save your MSI Afterburner's
+            undervolt settings to one of five profile presets, and ensure "Apply
+            overclocking on system startup" and "Start with Windows" are both
+            applied. If crashes persist, reset your changes to default values.
+          </li>
+        </ul>
+        <h2>If the fixes don't work:</h2>
+        <p>
+          The problem might be outside your control. You can try reporting the
+          problem to
+          <a href="https://www.monsterhunter.com/support/wilds/en/form/consent"
+            >Capcom Support</a
+          >
+          by filling out their technical inquiry contact form. Include your
+          platform, and the troubleshooting steps you already took.
+        </p>
+        <script>
+          function filterErrors() {
+            var input = document
+              .getElementById("searchBar")
+              .value.toLowerCase();
+            var list = document.getElementById("errorList");
+            var items = list.getElementsByTagName("li");
+
+            for (var i = 0; i < items.length; i++) {
+              var text = items[i].textContent.toLowerCase();
+              if (text.includes(input)) {
+                items[i].style.display = "";
+              } else {
+                items[i].style.display = "none";
+              }
+            }
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

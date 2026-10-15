@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initial scale="1" />
+
+    <title>R1141-TAD-W72T:10001</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="topbar">
+      <a href="/" class="nav-btn">Home</a>
+      <a href="About.html" class="nav-btn">About</a>
+    </nav>
+    <div class="layout">
+      <nav class="sidebar">
+        <input
+          type="text"
+          id="searchBar"
+          placeholder="Search errors..."
+          oninput="filterErrors()"
+        />
+        <h2>Errors & Resources</h2>
+        <ul id="errorList">
+          <li><a href="R31A6-0-03.html">R31A6-0-0:3</a></li>
+          <li>
+            <a href="Fatal-D3D-Error-DXGI-Device-Removed.html"
+              >Fatal D3D error</a
+            >
+          </li>
+          <li>
+            <a href="0x140000000-0xa4d69d0.html">0x140000000 + 0xa4d69d0</a>
+          </li>
+          <li>
+            <a href="Manual Port Forwarding.html">Manual Port Forwarding</a>
+          </li>
+          <li>
+            <a href="Intel 13th & 14th Gen CPUs Solution and Workaround.html"
+              >Intel 13th & 14th Gen CPUs Solution and Workaround</a
+            >
+          </li>
+          <li>
+            <a href="How to Set up a Static IP Address.html"
+              >How to Set up a Static IP Address</a
+            >
+          </li>
+          <li>
+            <a href="How to Disable IPv6 for Consoles.html"
+              >How to Disable IPv6 for Consoles</a
+            >
+          </li>
+          <li>
+            <a href="How to Access your Router's Admin Page.html"
+              >How to Access your Router's Admin Page</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="main">
+        <h1>R1141-TAD-W72T:10001</h1>
+
+        <p>
+          <b>Briefing:</b> R1141-TAD-W72T:10001 is another networking error
+          which follows the same resolution steps as
+          <a href="R31A6-0-03.html">R31A6-0-03</a>. Therefore, try the steps in
+          that page first, as the section below only concerns players who live
+          in Russia.
+        </p>
+
+        <p>
+          <b>Note:</b> If you live in Russia, especially the Russian Far East,
+          or if your Internet Service Provider happens to be Rostelecom or
+          smaller ISPs that rely on its infrastructure, and the steps in the
+          <a href="R31A6-0-03.html">R31A6-0-03</a> guide did not work, then you
+          could try Yandex's Domain Name System (DNS). Players in Russia report
+          that it may resolve this specific error. This only applies to players
+          in Russia.
+        </p>
+
+        <p>
+          <b>Privacy Trade-off:</b> Yandex's DNS logs queries per Russian law,
+          such as the names of domains you visit, and may retain such
+          information for years. It may also be obligated to provide such
+          queries to state agencies when requested.
+        </p>
+
+        <h2>On Windows</h2>
+
+        <ul>
+          <li>Win + I on keyboard</li>
+          <li>Click Network &amp; Internet</li>
+          <li>Select your connection (Wi-Fi/Ethernet)</li>
+          <li>Scroll down to DNS server assignment</li>
+          <li>Click Edit</li>
+          <li>Change the dropdown menu from Automatic DHCP to Manual</li>
+          <li>
+            Under IPv4: Enter the DNS addresses: 77.88.8.88 in "Preferred DNS,"
+            and 77.88.8.2 in "Alternate DNS"
+          </li>
+        </ul>
+
+        <h2>On PlayStation (PS5/PS4)</h2>
+        <ul>
+          <li>Go to Settings, then Network</li>
+          <li>Select Set Up Internet Connection</li>
+          <li>
+            Select your connection, press the start button while selecting it,
+            then "Advanced Settings"
+          </li>
+          <li>Find DNS Settings and change them to Manual</li>
+          <li>
+            Enter the DNS addresses: 77.88.8.88 in Primary, and 77.88.8.2 in
+            Secondary
+          </li>
+        </ul>
+
+        <h2>On Xbox</h2>
+        <ul>
+          <li>Go to Settings, then General, then Network Settings</li>
+          <li>Go to Advanced Settings, DNS Setting</li>
+          <li>Change to Manual</li>
+          <li>
+            Enter the DNS addresses: 77.88.8.88 in Primary, and 77.88.8.2 in
+            Secondary
+          </li>
+        </ul>
+        <script>
+          function filterErrors() {
+            var input = document
+              .getElementById("searchBar")
+              .value.toLowerCase();
+            var list = document.getElementById("errorList");
+            var items = list.getElementsByTagName("li");
+
+            for (var i = 0; i < items.length; i++) {
+              var text = items[i].textContent.toLowerCase();
+              if (text.includes(input)) {
+                items[i].style.display = "";
+              } else {
+                items[i].style.display = "none";
+              }
+            }
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
