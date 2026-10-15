@@ -1,0 +1,182 @@
+/* ===== Colour Palette ===== */
+:root {
+  --background: #252a32;
+  --accent: #75bfff;
+  --text-primary: #e4eaf1;
+  --text-body: #c6d0dc;
+}
+
+/* ===== Global ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+/* ===== Layout ===== */
+
+.layout {
+  display: flex;
+}
+
+/* ===== Topbar ===== */
+
+.topbar {
+  display: flex;
+  background-color: #373c43;
+  height: 56px;
+  padding: 0px 20px;
+  border: 1px solid #4a5460;
+  align-items: center;
+}
+/* ===== Topbar Elements ===== */
+.nav-btn {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  padding: 0px 20px;
+  border-right: 1px solid #4a5460;
+}
+.nav-btn:first-child {
+  padding-left: 0px;
+}
+
+/* ===== Sidebar ===== */
+
+.sidebar {
+  height: 100vh;
+  width: 240px;
+  background-color: #3a424c;
+  padding: 8px;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  overflow-y: auto;
+}
+.sidebar h2 {
+  font-size: 24px;
+  color: var(--text-primary);
+  padding: 0px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+}
+.sidebar li {
+  border: 1px solid #4a5460;
+  background-color: #2f353d;
+  border-radius: 12px;
+  padding: 4px;
+  margin-bottom: 10px;
+}
+
+/* ===== Searchbar ===== */
+
+#searchBar {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #4a5460;
+  border-radius: 18px;
+  background-color: #323840;
+  color: var(--text-body);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  outline: none;
+  margin-top: 6px;
+  text-align: left;
+}
+#searchBar:focus {
+  border-color: var(--accent);
+  background-color: #2a3038;
+}
+body {
+  padding: 0px;
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text-body);
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+/* ===== Main ===== */
+
+.main {
+  flex: 1;
+  padding: 25px;
+  max-width: 75ch;
+  text-align: left;
+}
+hr {
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-primary);
+}
+
+/* ===== Headings ===== */
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+h1 {
+  margin-bottom: 22px;
+  color: var(--text-primary);
+  font-size: 30px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: var(--accent);
+  font-size: 24px;
+}
+
+h3 {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+  font-size: 20px;
+}
+
+/* ===== Paragraphs and Lists ===== */
+
+p {
+  margin-bottom: 14px;
+}
+
+b,
+strong {
+  color: var(--accent);
+}
+
+ul,
+ol {
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 12px;
+}
+/* ===== Responsive Layout ===== */
+@media (max-width: 760px) {
+  .layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
