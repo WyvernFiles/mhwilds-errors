@@ -46,7 +46,7 @@
 
         <h2>Likely Cause:</h2>
 
-        <p>Firewall rules, IPv6 routing, or regional routing.</p>
+        <p>Firewall rules, IPv6 routing, or VPN status.</p>
 
         <h2>Prerequisite:</h2>
 
@@ -70,6 +70,19 @@
           from establishing a connection with the game's servers.
         </p>
 
+        <p>First, verify which network profile you're currently using:</p>
+        <ul>
+          <li>
+            Press Win + I, and in the left sidebar navigate to Network &
+            Internet.
+          </li>
+          <li>
+            Click your current connection type (Wi-Fi or Ethernet). If the
+            dropdown menu is closed, open it. Memorize your "Network profile
+            type". It will be either "Private" or "Public".
+          </li>
+        </ul>
+
         <ul>
           <li>
             Press the Windows key to bring up your search bar, search for "Allow
@@ -84,17 +97,10 @@
           </li>
           <li>Add "MonsterHunterWilds.exe" to the list</li>
           <li>
-            Click "Network types..." and ensure your current network type is
-            checked
+            Click "Network types..." and ensure your current network profile
+            type is checked
           </li>
         </ul>
-
-        <p>
-          To verify your network type, press Win + I, and in the left sidebar
-          navigate to Network & Internet. Click your current connection type
-          (Wi-Fi or Ethernet). If the dropdown menu is closed, open it. Note
-          your "Network profile type". It will be either "Private" or "Public".
-        </p>
 
         <p>
           <b>Note:</b> If you are using a third-party firewall, find its
@@ -161,7 +167,8 @@
           it and see if that resolves the error. If it does not, consider
           testing Cloudflare's WARP VPN, which is free and has unlimited data.
           It does not change your geographic origin, but it does change the
-          route your data takes to reach the game's servers.
+          route your data takes to reach the game's servers, potentially
+          bypassing routing issues that may be causing the error.
         </p>
 
         <p>
@@ -187,7 +194,7 @@
           introduce latency and lag, especially if the VPN server is far from
           your location. If you wish to try, I recommend testing Proton VPN
           first, as there are confirmed reports of it resolving this error. If
-          it works, but introduces latency and lag, consider testing other VPNs
+          it works but introduces latency and lag, consider testing other VPNs
           with servers closer to your location.
         </p>
 
