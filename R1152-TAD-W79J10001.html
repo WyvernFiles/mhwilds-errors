@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width," initial scale="1" />
+    <title>R1152-TAD-W79J:10001</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="topbar">
+      <a href="/" class="nav-btn">Home</a>
+      <a href="About.html" class="nav-btn">About</a>
+      <a href="Resources.html" class="nav-btn">Resources</a>
+    </nav>
+    <div class="layout">
+      <nav class="sidebar">
+        <input
+          type="text"
+          id="searchBar"
+          placeholder="Search errors..."
+          oninput="filterErrors()"
+        />
+        <h2>List of Errors</h2>
+        <ul id="errorList">
+          <li>
+            <a href="Fatal-D3D-Error-DXGI-Device-Removed.html"
+              >Fatal D3D error</a
+            >
+          </li>
+          <li>
+            <a href="0x140000000-0xa4d69d0.html">0x140000000 + 0xa4d69d0</a>
+          </li>
+          <li><a href="R1141-TAD-W72T10001.html">R1141-TAD-W72T:10001</a></li>
+          <li><a href="R31A6-0-03.html">R31A6-0-0:3</a></li>
+        </ul>
+      </nav>
+      <div class="main">
+        <h1>R1152-TAD-W79J:10001</h1>
+
+        <h2>Briefing:</h2>
+
+        <p>
+          You try to connect to a multiplayer session but are unable to do so.
+          The error "R1152-TAD-W79J:10001" is cited.
+        </p>
+
+        <h2>Likely Cause:</h2>
+
+        <p>Firewall rules, IPv6 routing, or regional routing.</p>
+
+        <h2>Prerequisite:</h2>
+
+        <p>Check if the servers are actually down.</p>
+        <p>
+          Before troubleshooting your own network, check the official Monster
+          Hunter status account at
+          <a href="https://x.com/mhstatusupdates">@MHStatusUpdates</a>. If they
+          are reporting a widespread outage or maintenance, the issue is on
+          Capcom's end and no local fix will work. Wait for the servers to come
+          back online.
+        </p>
+
+        <h2>General Fixes (try in order):</h2>
+
+        <h3>
+          1. Allow the game through your firewall, along with its inbound rules.
+        </h3>
+        <p>
+          A frequently reported solution. A device's firewall may prevent it
+          from establishing a connection with the game's servers.
+        </p>
+
+        <ul>
+          <li>
+            Press the Windows key to bring up your search bar, search for "Allow
+            an App through Windows Firewall" and click it
+          </li>
+          <li>If the settings are greyed out, click "Change Settings"</li>
+          <li>Click "Allow another app", then "Browse"</li>
+          <li>
+            Find the game's executable file. It is usually located in "This
+            PC\Local Disk (C):\Program Files
+            (x86)\Steam\steamapps\common\MonsterHunterWilds"
+          </li>
+          <li>Add "MonsterHunterWilds.exe" to the list</li>
+          <li>
+            Click "Network types..." and ensure your current network type is
+            checked
+          </li>
+        </ul>
+
+        <p>
+          To verify your network type, press Win + I, and in the left sidebar
+          navigate to Network & Internet. Click your current connection type
+          (Wi-Fi or Ethernet). If the dropdown menu is closed, open it. Note
+          your "Network profile type". It will be either "Private" or "Public".
+        </p>
+
+        <p>
+          <b>Note:</b> If you are using a third-party firewall, find its
+          documentation to learn how to allow an app through it.
+        </p>
+
+        <p>
+          <b>Allowing the game's inbound rules:</b>
+        </p>
+
+        <ul>
+          <li>
+            Press the Windows key to bring up your search bar, search for
+            "Windows Defender Firewall with Advanced Security" and click it
+          </li>
+          <li>In the left sidebar, click "Inbound Rules"</li>
+          <li>
+            In the large list, find the rules for "Monster Hunter Wilds" and
+            ensure they are enabled. If they are disabled, right-click them and
+            select "Enable Rule"
+          </li>
+          <li>
+            If instead of a checkmark, you see a cross symbol, right-click the
+            rule, then Properties. In the "Action" section, select "Allow the
+            connection" and click OK
+          </li>
+        </ul>
+
+        <p>
+          <b>Test the game's multiplayer functionality</b> after making these
+          changes. If the error persists, continue to the next step.
+        </p>
+
+        <h3>2. Disable IPv6.</h3>
+        <p>
+          A frequently successful step in troubleshooting connectivity errors in
+          Wilds. Some networks may have IPv6 routing problems that do not affect
+          IPv4. Disabling IPv6 forces the device to use IPv4 instead.
+        </p>
+
+        <p><b>On PC:</b></p>
+        <ul>
+          <li>Win + R</li>
+          <li>Type "ncpa.cpl" and press Enter</li>
+          <li>Find your active Wi-Fi/Ethernet adapter</li>
+          <li>Right-click it and press Properties</li>
+          <li>Find "Internet Protocol Version 6 (TCP/IPv6)"</li>
+          <li>Uncheck it and click OK</li>
+        </ul>
+
+        <p><b>On PlayStation and Xbox:</b></p>
+        <p>
+          You will have to disable IPv6 through your router's admin page. Note
+          that not all routers have such an option. If you wish to try, visit
+          <a href="How to Disable IPv6 for Consoles.html"
+            >How to Disable IPv6 for Consoles</a
+          >. If you would like to try other steps first, continue reading.
+        </p>
+
+        <h3>3. PC only: Change Virtual Private Network (VPN) status.</h3>
+        <p>
+          The game may treat connections differently based on their IP address
+          or geographic origin. First, if you have a VPN enabled, try disabling
+          it and see if that resolves the error. If it does not, consider
+          testing Cloudflare's WARP VPN, which is free and has unlimited data.
+          It does not change your geographic origin, but it does change the
+          route your data takes to reach the game's servers.
+        </p>
+
+        <p>
+          If you wish to try Cloudflare's WARP, you will need to download the
+          application at
+          <a href="https://one.one.one.one/">1.1.1.1</a>.
+        </p>
+
+        <p>After installing 1.1.1.1:</p>
+        <ul>
+          <li>Open the app</li>
+          <li>Make sure the mode is WARP, not 1.1.1.1/DNS-only</li>
+          <li>Turn the WARP toggle ON</li>
+          <li>Wait until the app shows that WARP is connected</li>
+          <li>
+            Launch Monster Hunter Wilds and try hosting/joining a quest again
+          </li>
+        </ul>
+
+        <p>
+          <b>Note:</b> Conventional VPNs that change your apparent geographic
+          origin may succeed if Cloudflare's WARP fails, but they may also
+          introduce latency and lag, especially if the VPN server is far from
+          your location. If you wish to try, I recommend testing Proton VPN
+          first, as there are confirmed reports of it resolving this error. If
+          it works, but introduces latency and lag, consider testing other VPNs
+          with servers closer to your location.
+        </p>
+
+        <script>
+          function filterErrors() {
+            var input = document
+              .getElementById("searchBar")
+              .value.toLowerCase();
+            var list = document.getElementById("errorList");
+            var items = list.getElementsByTagName("li");
+
+            for (var i = 0; i < items.length; i++) {
+              var text = items[i].textContent.toLowerCase();
+              if (text.includes(input)) {
+                items[i].style.display = "";
+              } else {
+                items[i].style.display = "none";
+              }
+            }
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
