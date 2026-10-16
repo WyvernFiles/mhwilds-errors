@@ -107,6 +107,7 @@ body {
   padding: 25px;
   max-width: 75ch;
   text-align: left;
+  background-color: var(--background);
 }
 hr {
   margin-bottom: 24px;
