@@ -235,40 +235,52 @@
         </ul>
         <p>If a BIOS update does not resolve the crash, continue reading.</p>
 
-        <h3>
+        <h3 id="Afterburner-Link">
           6. Check and Adjust your GPU's Clock and Volt settings (Advanced).
         </h3>
 
         <p>
           Overclocking and overvolting may lead to a GPU crash error, and so can
-          underclocking and undervolting. However, a modest undervolt/clock may
-          actually fix said crashes. First, if you changed any of these settings
-          in your GPU, revert to default values and retry playing the game. If
-          you never touched those settings, or reverting did not work, continue
-          reading.
+          underclocking and undervolting. However, a modest undervolt or
+          underclock has been reported to fix "FATAL-D3D-Error" crashes in some
+          cases. First,
+          <b
+            >if you changed any of these settings in your GPU, revert to default
+            values and retry playing the game</b
+          >. If you never touched those settings, or reverting did not work,
+          continue reading.
         </p>
-        <ul>
-          <li>
-            First, to configure GPU settings, download the Final version of
-            <a href="https://www.msi.com/Landing/afterburner/graphics-cards"
-              >MSI Afterburner</a
-            >
-          </li>
-          <li>
-            During installation, you will usually be offered to install both MSI
-            Afterburner and RivaTuner Statistics Server. The latter is optional.
-            It shows GPU clock speed, temperature, power, other information, and
-            is used for monitoring
-          </li>
-          <li>Open MSI Afterburner</li>
-        </ul>
+
         <p>
-          <b>Prerequisite:</b> MSI Afterburner has many skins, not all show full
-          functionality. To change the skin, find the settings button - Navigate
-          to User Interface tab - Under "User interface skinning properties",
-          ensure the skin is set to <b>"Default MSI Afterburner v2 skin"</b>, as
-          this is the skin the guide assumes. You may change this after to your
-          preference. Also, bottom left of the interface,
+          First, to configure GPU settings, you will need capable software. If
+          you are using an AMD GPU, and you already have AMD Adrenalin, click
+          <a href="#For-AMD-GPUs">here.</a> If you don't have Adrenalin
+          installed, or you use an NVIDIA GPU, I recommend downloading the Final
+          version of
+          <a href="https://www.msi.com/Landing/afterburner/graphics-cards"
+            >MSI Afterburner</a
+          >, as the
+          <b>NVIDIA App does not support undervolting or underclocking</b>, and
+          AMD's Adrenalin might not support the settings we need for all GPU
+          models.
+        </p>
+
+        <p>
+          During installation, you will usually be offered to install both MSI
+          Afterburner and RivaTuner Statistics Server. The latter is
+          <b>optional</b>. It shows GPU clock speed, temperature, power, other
+          information, and is used for monitoring. Open MSI Afterburner when
+          ready.
+        </p>
+
+        <p>
+          <b>Prerequisite:</b> MSI Afterburner has many skins, not all of them
+          show full functionality. To change the skin, find the settings button
+          - Navigate to User Interface tab - Under "User interface skinning
+          properties", ensure the skin is set to
+          <b>"Default MSI Afterburner v2 skin"</b>, as this is the skin the
+          guide assumes. You may change this after to your preference. Also,
+          bottom left of the interface,
           <b>uncheck 'Apply overclocking at system startup' for now</b>. Bottom
           right of the interface, you can click Reset to undo any previously
           applied changes to your GPU.
@@ -276,7 +288,7 @@
         <ul>
           <li>
             Beginning with clock reduction, find the "Core Clock (MHz)" slider,
-            and lower it by -100 MHz, but do not save yet
+            and lower it by 100 MHz, but do not save yet
           </li>
           <li>Click apply, then try launching and playing the game</li>
         </ul>
@@ -291,8 +303,8 @@
         <ul>
           <li>
             If the reduction does not stop the crashes, further reduce Core
-            Clock by -150MHz, and try again. If the crashes persist, you may try
-            -200MHz
+            Clock by 150MHz, and try again. If the crashes persist, you may try
+            a final 200MHz reduction
           </li>
           <li>
             If the game continues to crash after a -200MHz decrease, reset the
@@ -337,6 +349,72 @@
             applied. If crashes persist, reset your changes to default values.
           </li>
         </ul>
+
+        <b id="For-AMD-GPUs">AMD Adrenalin:</b>
+
+        <ul>
+          <li>Open Adrenalin</li>
+
+          <li>Go to Performance - Tuning - Set "Manual Tuning" to "Custom"</li>
+
+          <li>Enable "GPU Tuning"</li>
+
+          <li>
+            Using the "Max Frequency" slider, lower the percentage by 4% first,
+            then click "Apply Changes" and test the game
+          </li>
+        </ul>
+        <p>
+          <b>Optional: Exporting a profile:</b> If you wish to save a reusable
+          profile, go to "Export Profile", then name and save it.
+        </p>
+
+        <ul>
+          <li>
+            Try launching the game. If it still crashes, try lowering "Max
+            Frequency" by 6% instead, then apply changes and test
+          </li>
+
+          <li>
+            if the game continues to crash, lower "Max Frequency" by 8% as your
+            final attempt, then apply changes and test
+          </li>
+        </ul>
+        <p>
+          If underclocking did not work, you may try undervolting next.
+          <b>Not all AMD GPUs can be undervolted in AMD Adrenalin.</b> If you do
+          not see the settings below, you will need to scroll up, download MSI
+          Afterburner, and follow its own undervolting instructions.
+        </p>
+
+        <p>
+          <b>AMD Adrenalin Undervolting:</b>
+        </p>
+        <ul>
+          <li>Go to Performance - Tuning - Set "Manual Tuning" to "Custom"</li>
+
+          <li>Enable "GPU Tuning" and "Advanced Control" if you see it</li>
+
+          <li>
+            Look for a voltage slider and lower it by 50mV, then apply changes
+            and test the game
+          </li>
+
+          <li>
+            If the crashes continue,
+            <b>restore undervolt settings to default values</b>
+          </li>
+        </ul>
+        <p>
+          <b>If you only see a percentage-based slider,</b> I recommend finding
+          your current default voltage, which may or may not be available in AMD
+          Adrenalin depending on your GPU model, and then lowering the
+          percentage to what matches a -50mV decrease. Run a calculation using
+          the formula: 50 / Default Voltage (mV) * 100 = Percentage Reduction %.
+          If you cannot find your default voltage, I suggest using MSI
+          Afterburner to undervolt instead. The download link and instructions
+          are available <a href="#Afterburner-Link">here</a>.
+        </p>
         <h2>If the fixes don't work:</h2>
         <p>
           The problem might be outside your control. You can try reporting the
