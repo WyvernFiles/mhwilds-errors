@@ -1,9 +1,9 @@
 <!doctype html>
-<html>
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About This Manual</title>
+    <title>Monster Hunter Wilds: Diagnostic Manual</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -11,6 +11,7 @@
       <a href="/" class="nav-btn">Home</a>
       <a href="About.html" class="nav-btn">About</a>
       <a href="Resources.html" class="nav-btn">Resources</a>
+      <button type="button" id="themeToggle">☾</button>
     </nav>
     <div class="layout">
       <nav class="sidebar">
@@ -67,6 +68,20 @@
               }
             }
           }
+          function toggleTheme() {
+            var html = document.documentElement;
+            var button = document.getElementById("themeToggle");
+            if (html.getAttribute("data-theme") === "light") {
+              html.setAttribute("data-theme", "dark");
+              button.textContent = "☾";
+            } else {
+              html.setAttribute("data-theme", "light");
+              button.textContent = "☀";
+            }
+          }
+          document
+            .getElementById("themeToggle")
+            .addEventListener("click", toggleTheme);
         </script>
       </div>
     </div>

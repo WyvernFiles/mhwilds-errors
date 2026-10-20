@@ -16,6 +16,33 @@ html {
   scroll-behavior: smooth;
 }
 
+html[data-theme="light"] {
+  --background: #f5f7fa;
+  --accent: #1769aa;
+  --text-primary: #1e2935;
+  --text-body: #465363;
+  --border-color: #d0d7df;
+}
+
+html[data-theme="light"] .topbar {
+  background-color: #e3e8ef;
+  border-color: #b7c0ca;
+}
+
+html[data-theme="light"] .sidebar {
+  background-color: #d9e0e8;
+}
+
+html[data-theme="light"] .sidebar li {
+  background-color: #f0f3f7;
+  border-color: #7e8185;
+}
+
+html[data-theme="light"] #searchBar {
+  background-color: #f5f7fa;
+  border-color: #c1c7ce;
+}
+
 /* ===== Layout ===== */
 
 .layout {
@@ -42,6 +69,20 @@ html {
 }
 .nav-btn:first-child {
   padding-left: 0;
+}
+
+#themeToggle {
+  margin-left: auto;
+  padding: 6px 9px;
+  border-radius: 6px;
+  background-color: transparent #4a5460;
+  color: black;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+html[data-theme="light"] #themeToggle {
+  background-color: #ffffff;
 }
 
 /* ===== Sidebar ===== */
@@ -94,6 +135,10 @@ html {
 #searchBar:focus {
   border-color: var(--accent);
   background-color: #2a3038;
+}
+html[data-theme="light"] #searchBar:focus {
+  border-color: var(--accent);
+  background-color: #fff;
 }
 body {
   padding: 0px;
