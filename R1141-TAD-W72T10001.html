@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Monster Hunter Wilds: Diagnostic Manual</title>
+    <title>R1141-TAD-W72T:10001</title>
+    <script>
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
+    </script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -32,7 +38,9 @@
             <a href="0x140000000-0xa4d69d0.html">0x140000000 + 0xa4d69d0</a>
           </li>
           <li>
-            <a href="R31A6-0-03 + R35A6-0-03.html">R31A6-0-0:3 + R35A6-0-0:3</a>
+            <a href="R31A6-0-03 + R35A6-0-03 + S9041-TAD-W72T.html"
+              >R31A6-0-0:3 + R35A6-0-0:3 / S9041-TAD-W72T</a
+            >
           </li>
           <li><a href="R1152-TAD-W79J10001.html">R1152-TAD-W79:10001</a></li>
         </ul>
@@ -42,19 +50,23 @@
         <h2>Briefing:</h2>
         <p>
           R1141-TAD-W72T:10001 is another networking error which follows the
-          same resolution steps as <a href="R31A6-0-03.html">R31A6-0-03</a>.
-          Therefore, try the steps in that page first, as the section below only
-          concerns players who live in Russia.
+          same resolution steps as
+          <a href="R31A6-0-03 + R35A6-0-03 + S9041-TAD-W72T.html"
+            >R31A6-0-03 + R35A6-0-03 + S9041-TAD-W72T</a
+          >. Therefore, try the steps in that page first, as the section below
+          only concerns players who live in Russia.
         </p>
 
         <p>
           <b>Note:</b> If you live in Russia, especially the Russian Far East,
           or if your Internet Service Provider happens to be Rostelecom or
           smaller ISPs that rely on its infrastructure, and the steps in the
-          <a href="R31A6-0-03.html">R31A6-0-03</a> guide did not work, then you
-          could try Yandex's Domain Name System (DNS). Players in Russia report
-          that it may resolve this specific error. This only applies to players
-          in Russia.
+          <a href="R31A6-0-03 + R35A6-0-03 + S9041-TAD-W72T.html"
+            >R31A6-0-03 + R35A6-0-03 + S9041-TAD-W72T</a
+          >
+          guide did not work, then you could try Yandex's Domain Name System
+          (DNS). Players in Russia report that it may resolve this specific
+          error. This only applies to players in Russia.
         </p>
 
         <p>
@@ -126,16 +138,26 @@
             }
           }
           function toggleTheme() {
-            var html = document.documentElement;
-            var button = document.getElementById("themeToggle");
+            const html = document.documentElement;
+            const button = document.getElementById("themeToggle");
+
             if (html.getAttribute("data-theme") === "light") {
               html.setAttribute("data-theme", "dark");
-              button.textContent = "☾";
+              button.textContent =
+                html.getAttribute("data-theme") === "light" ? "☾" : "☀";
+              localStorage.setItem("theme", html.getAttribute("data-theme"));
             } else {
               html.setAttribute("data-theme", "light");
-              button.textContent = "☀";
+              button.textContent =
+                html.getAttribute("data-theme") === "light" ? "☾" : "☀";
+              localStorage.setItem("theme", html.getAttribute("data-theme"));
             }
           }
+          const themeButton = document.getElementById("themeToggle");
+          themeButton.textContent =
+            document.documentElement.getAttribute("data-theme") === "light"
+              ? "☾"
+              : "☀";
           document
             .getElementById("themeToggle")
             .addEventListener("click", toggleTheme);

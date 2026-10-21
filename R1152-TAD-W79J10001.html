@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Monster Hunter Wilds: Diagnostic Manual</title>
+    <title>R1152-TAD-W79J:10001</title>
+    <script>
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
+    </script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -33,7 +39,9 @@
           </li>
           <li><a href="R1141-TAD-W72T10001.html">R1141-TAD-W72T:10001</a></li>
           <li>
-            <a href="R31A6-0-03 + R35A6-0-03.html">R31A6-0-0:3 + R35A6-0-0:3</a>
+            <a href="R31A6-0-03 + R35A6-0-03 + S9041-TAD-W72T.html"
+              >R31A6-0-0:3 + R35A6-0-0:3 / S9041-TAD-W72T</a
+            >
           </li>
         </ul>
       </nav>
@@ -134,71 +142,12 @@
 
         <p>
           <b>Test the game's multiplayer functionality</b> after making these
-          changes. If the error persists, continue to the next step.
-        </p>
-
-        <h3>2. Disable IPv6.</h3>
-        <p>
-          A frequently successful step in troubleshooting connectivity errors in
-          Wilds. Some networks may have IPv6 routing problems that do not affect
-          IPv4. Disabling IPv6 forces the device to use IPv4 instead.
-        </p>
-
-        <p><b>On PC:</b></p>
-        <ul>
-          <li>Win + R</li>
-          <li>Type "ncpa.cpl" and press Enter</li>
-          <li>Find your active Wi-Fi/Ethernet adapter</li>
-          <li>Right-click it and press Properties</li>
-          <li>Find "Internet Protocol Version 6 (TCP/IPv6)"</li>
-          <li>Uncheck it and click OK</li>
-        </ul>
-
-        <p><b>On PlayStation and Xbox:</b></p>
-        <p>
-          You will have to disable IPv6 through your router's admin page. Note
-          that not all routers have such an option. If you wish to try, visit
-          <a href="How to Disable IPv6 for Consoles.html"
-            >How to Disable IPv6 for Consoles</a
-          >. If you would like to try other steps first, continue reading.
-        </p>
-
-        <h3>3. PC only: Change Virtual Private Network (VPN) status.</h3>
-        <p>
-          The game may treat connections differently based on their IP address
-          or geographic origin. First, if you have a VPN enabled, try disabling
-          it and see if that resolves the error. If it does not, consider
-          testing Cloudflare's WARP VPN, which is free and has unlimited data.
-          It does not change your geographic origin, but it does change the
-          route your data takes to reach the game's servers, potentially
-          bypassing routing issues that may be causing the error.
-        </p>
-
-        <p>
-          If you wish to try Cloudflare's WARP, you will need to download the
-          application at
-          <a href="https://one.one.one.one/">1.1.1.1</a>.
-        </p>
-
-        <p>After installing 1.1.1.1:</p>
-        <ul>
-          <li>Open the app</li>
-          <li>Make sure the mode is WARP, not 1.1.1.1/DNS-only</li>
-          <li>Turn the WARP toggle ON</li>
-          <li>Wait until the app shows that WARP is connected</li>
-          <li>
-            Launch Monster Hunter Wilds and try hosting/joining a quest again
-          </li>
-        </ul>
-
-        <p>
-          <b>Note:</b> Conventional VPNs that change your apparent geographic
-          origin may succeed if Cloudflare's WARP fails, but they may also
-          introduce latency and lag, especially if the VPN server is far from
-          your location. If you wish to try, I recommend testing Proton VPN
-          first, as there are confirmed reports of it resolving this error. If
-          it works but introduces latency and lag, consider testing other VPNs
-          with servers closer to your location.
+          changes. If the error persists, or the game was allowed to begin with,
+          you will have to follow the troubleshooting steps found in
+          <a href="R31A6-0-03 + R35A6-0-03 + S9041-TAD-W72T.html">this page</a>.
+          The only difference in resolution is that there are more confirmed
+          reports of Proton VPN resolving this specific error, although you
+          should still try Cloudflare's WARP first for latency's sake.
         </p>
 
         <script>
@@ -219,16 +168,26 @@
             }
           }
           function toggleTheme() {
-            var html = document.documentElement;
-            var button = document.getElementById("themeToggle");
+            const html = document.documentElement;
+            const button = document.getElementById("themeToggle");
+
             if (html.getAttribute("data-theme") === "light") {
               html.setAttribute("data-theme", "dark");
-              button.textContent = "☾";
+              button.textContent =
+                html.getAttribute("data-theme") === "light" ? "☾" : "☀";
+              localStorage.setItem("theme", html.getAttribute("data-theme"));
             } else {
               html.setAttribute("data-theme", "light");
-              button.textContent = "☀";
+              button.textContent =
+                html.getAttribute("data-theme") === "light" ? "☾" : "☀";
+              localStorage.setItem("theme", html.getAttribute("data-theme"));
             }
           }
+          const themeButton = document.getElementById("themeToggle");
+          themeButton.textContent =
+            document.documentElement.getAttribute("data-theme") === "light"
+              ? "☾"
+              : "☀";
           document
             .getElementById("themeToggle")
             .addEventListener("click", toggleTheme);

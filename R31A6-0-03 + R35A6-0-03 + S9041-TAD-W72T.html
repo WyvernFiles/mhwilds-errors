@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Monster Hunter Wilds: Diagnostic Manual</title>
+    <title>R31A6-0:03 / R35A6-0-0:3 / S9041-TAD-W72T</title>
+    <script>
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
+    </script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -38,13 +44,14 @@
         </ul>
       </nav>
       <div class="main">
-        <h1>R31A6-0-03 + R35A6-0-0:3</h1>
+        <h1>R31A6-0:03 / R35A6-0-0:3 / S9041-TAD-W72T</h1>
 
         <h2>Briefing:</h2>
         <p>
           You try to start a multiplayer session, host or join an online quest,
-          and get the error "R31A6-0-0:3" or, more frequently seen when
-          attempting to join SOS quests, error "R35A6-0-0:3".
+          and get the error "R31A6-0-0:3" or "S9041-TAD-W72T", or more
+          frequently seen when attempting to join SOS quests, error
+          "R35A6-0-0:3".
         </p>
 
         <h2>Likely Cause:</h2>
@@ -67,63 +74,7 @@
 
         <h2>General Fixes (try in order):</h2>
 
-        <h3>1. Restart your router.</h3>
-        <p>
-          Turn it off, wait 30 seconds (so it fully powers down and clears
-          cached connections), then turn it back on.
-        </p>
-
-        <h3>2. Check your NAT type.</h3>
-        <p>
-          There are three main NAT types. Open/Moderate/Strict, respectively
-          1/2/3 on Playstation. A Strict NAT type (3) may interfere with
-          multiplayer connectivity. To check your NAT type:
-        </p>
-
-        <p>
-          <b>PlayStation:</b> Settings → Network → View Connection Status → NAT
-          Type
-        </p>
-
-        <p>
-          <b>Xbox:</b> Settings → General → Network settings → Test NAT type
-        </p>
-
-        <p>
-          <b>PC:</b> Visit
-          <a href="https://www.checkmynat.com/">CheckMyNAT</a> and click Detect
-          NAT. If it shows you "Symmetric NAT", it may handicap multiplayer
-          connectivity. You can remedy this by accessing your router's admin
-          page. Learn how in
-          <a href="How to Access your Router's Admin Page.html"
-            >How to Access your Router's Admin Page</a
-          >.
-        </p>
-
-        <p>
-          After you enter your router's admin page, you will have to find
-          <b>Universal Plug and Play (UPnP),</b> which is usually found under
-          sections such as <b>"NAT," "Port Forwarding," or "Advanced,"</b> and
-          enable it.
-        </p>
-
-        <p>
-          <b>Note:</b> While a possible fix, UPnP has a known security
-          trade-off. It lets devices on your network open ports automatically.
-          For most home users, the difference is negligible. If you're
-          security-conscious or on a shared network you're wary of (like a
-          campus's,) you can skip UPnP and manually forward the ports instead.
-          To manually forward the ports, visit
-          <a href="Manual Port Forwarding.html">Manual Port Forwarding</a>.
-        </p>
-
-        <p>
-          If your NAT type is Open/Moderate (1 or 2 on PlayStation), or you
-          enabled UPnP or manually forwarded the ports and the problem persists,
-          continue reading.
-        </p>
-
-        <h3>3. Disable IPv6.</h3>
+        <h3>1. Disable IPv6.</h3>
         <p>
           Some networks may have IPv6 routing problems that do not affect IPv4.
           Disabling IPv6 forces the device to use IPv4 instead.
@@ -153,30 +104,7 @@
           issue, don't forget to re-enable it.
         </p>
 
-        <h3>4. Disable Crossplay.</h3>
-        <p>
-          This is especially relevant in certain countries with regional
-          restrictions or limitations, but means losing the ability to play with
-          different platform users. In Monster Hunter Wilds, this will also mean
-          that you can only play with those who have their own Crossplay setting
-          disabled.
-        </p>
-
-        <p>To disable it:</p>
-        <ul>
-          <li>Navigate to Title Screen</li>
-          <li>Select Options</li>
-          <li>Open Game Settings</li>
-          <li>Find Crossplay</li>
-          <li>Set it to Disable</li>
-        </ul>
-
-        <p>
-          If the issue is not resolved, or you need Crossplay on, continue
-          reading.
-        </p>
-
-        <h3>5. PC only: Change Virtual Private Network (VPN) status.</h3>
+        <h3>2. PC only: Change Virtual Private Network (VPN) status.</h3>
         <p>
           Some countries, like Egypt, encounter this error due to regional
           limitations. The game may treat connections differently based on their
@@ -212,7 +140,30 @@
           VPN, as it has unlimited data on its free plan.
         </p>
 
-        <h3>6. PC only: Change network profile from public to private.</h3>
+        <h3>3. Disable Crossplay.</h3>
+        <p>
+          This is especially relevant in certain countries with regional
+          restrictions or limitations, but means losing the ability to play with
+          different platform users. In Monster Hunter Wilds, this will also mean
+          that you can only play with those who have their own Crossplay setting
+          disabled.
+        </p>
+
+        <p>To disable it:</p>
+        <ul>
+          <li>Navigate to Title Screen</li>
+          <li>Select Options</li>
+          <li>Open Game Settings</li>
+          <li>Find Crossplay</li>
+          <li>Set it to Disable</li>
+        </ul>
+
+        <p>
+          If the issue is not resolved, or you need Crossplay on, continue
+          reading.
+        </p>
+
+        <h3>4. PC only: Change network profile from public to private.</h3>
         <p>
           Low-confidence fix. A public network profile has stricter firewall
           rules than a private one. If such rules were the cause behind the
@@ -268,16 +219,26 @@
             }
           }
           function toggleTheme() {
-            var html = document.documentElement;
-            var button = document.getElementById("themeToggle");
+            const html = document.documentElement;
+            const button = document.getElementById("themeToggle");
+
             if (html.getAttribute("data-theme") === "light") {
               html.setAttribute("data-theme", "dark");
-              button.textContent = "☾";
+              button.textContent =
+                html.getAttribute("data-theme") === "light" ? "☾" : "☀";
+              localStorage.setItem("theme", html.getAttribute("data-theme"));
             } else {
               html.setAttribute("data-theme", "light");
-              button.textContent = "☀";
+              button.textContent =
+                html.getAttribute("data-theme") === "light" ? "☾" : "☀";
+              localStorage.setItem("theme", html.getAttribute("data-theme"));
             }
           }
+          const themeButton = document.getElementById("themeToggle");
+          themeButton.textContent =
+            document.documentElement.getAttribute("data-theme") === "light"
+              ? "☾"
+              : "☀";
           document
             .getElementById("themeToggle")
             .addEventListener("click", toggleTheme);
