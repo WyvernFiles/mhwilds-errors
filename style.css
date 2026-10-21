@@ -58,6 +58,9 @@ html[data-theme="light"] #searchBar {
   padding: 0px 20px;
   border: 1px solid #4a5460;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 /* ===== Topbar Elements ===== */
 .nav-btn {
@@ -88,12 +91,12 @@ html[data-theme="light"] #themeToggle {
 /* ===== Sidebar ===== */
 
 .sidebar {
-  height: 100vh;
+  height: calc(100vh - 56px);
   width: 240px;
   background-color: #3a424c;
   padding: 8px;
   position: sticky;
-  top: 0;
+  top: 56px;
   text-align: center;
   overflow-y: auto;
 }
@@ -131,6 +134,8 @@ html[data-theme="light"] #themeToggle {
   outline: none;
   margin-top: 6px;
   text-align: left;
+  position: sticky;
+  top: 0px;
 }
 #searchBar:focus {
   border-color: var(--accent);
