@@ -61,8 +61,7 @@
         <p>
           While this error is GPU-related, some of these CPUs come with a
           manufacturing defect that has a known root cause which may cause this
-          exact error. Before reading below, if you own such CPUs, you may try
-          the fixes in
+          exact error. If you own such CPUs, try the fixes in
           <a href="Intel 13th & 14th Gen CPUs Solution and Workaround.html"
             >Intel 13th & 14th Gen CPUs Solution and Workaround</a
           >
@@ -71,10 +70,9 @@
         <h2>General Fixes (try in order):</h2>
         <h3>1. Disable Frame Generation.</h3>
         <p>
-          The game may be sensitive to Frame Gen features on certain GPUs. We
-          will first try disabling Frame Generation in both Monster Hunter Wilds
-          and your GPU's software to ensure it does not override the in-game
-          setting.
+          The game may be sensitive to Frame Gen features on certain GPUs. Try
+          disabling Frame Generation in both Monster Hunter Wilds and your GPU's
+          software to ensure it does not override the in-game setting.
         </p>
 
         <p><b>Disabling Frame Generation in-game:</b></p>
@@ -84,9 +82,10 @@
           <li>Look for the Frame Generation toggle and turn it off</li>
         </ul>
         <p>
-          <b>Note:</b> Some have reported that disabling the in-game Frame Gen
-          toggle has no effect. If this is your case, you can disable Frame Gen
-          by force through editing the game's configuration file:
+          <b>Note:</b> Disabling Frame Generation in-game may have no effect if
+          overridden by software. If you suspect this is your case, or you want
+          to be certain, you can disable Frame Generation by force through
+          editing the game's configuration file:
         </p>
         <ul>
           <li>Open Steam and go to Library</li>
@@ -131,7 +130,7 @@
         <p>
           If you have an overlay on, such as Steam's or Discord's, or a recorder
           like NVIDIA's Shadowplay, try turning them off. Such software
-          interferes technically with games, and may break things.
+          interferes technically with games, and may cause crashes.
         </p>
         <ul>
           <li>
@@ -168,10 +167,10 @@
         </ul>
         <h3>3. Verify Game Files, then Delete shader.cache2 File.</h3>
         <p>
-          A GPU crash can occur due to things like a corrupted shader cache
-          file. If a GPU driver update changed how shaders are compiled, an old
-          cache would be incompatible, for example. If the game tries to read
-          this corrupted data, it may crash.
+          A GPU crash can occur due to a corrupted shader cache file. For
+          example, If a GPU driver update changed how shaders are compiled, an
+          old cache would be incompatible. If the game tries to read this
+          corrupted data, it may crash.
         </p>
         <ul>
           <li>Open Steam and go to your Library</li>
@@ -276,10 +275,10 @@
 
         <p>
           First, to configure GPU settings, you will need capable software. If
-          you are using an AMD GPU, and you already have AMD Adrenalin, click
-          <a href="#For-AMD-GPUs">here.</a> If you don't have Adrenalin
-          installed, or you use an NVIDIA GPU, I recommend downloading the Final
-          version of
+          you are using an AMD GPU and you have AMD Adrenalin installed, follow
+          your software's specific instructions
+          <a href="#For-AMD-GPUs">here.</a> If you don't have AMD Adrenalin, or
+          you use an NVIDIA GPU, download the Final version of
           <a href="https://www.msi.com/Landing/afterburner/graphics-cards"
             >MSI Afterburner</a
           >, as the
@@ -365,7 +364,7 @@
             their voltage, only their frequency to match the original point
           </li>
           <li>Exit the Editor, click Apply, then try launching the game</li>
-          <li>
+          <li id="For-AMD-GPUs">
             If the game no longer crashes, you may save your MSI Afterburner's
             undervolt settings to one of five profile presets, and ensure "Apply
             overclocking on system startup" and "Start with Windows" are both
@@ -373,7 +372,7 @@
           </li>
         </ul>
 
-        <b id="For-AMD-GPUs">AMD Adrenalin:</b>
+        <b>AMD Adrenalin:</b>
 
         <ul>
           <li>Open Adrenalin</li>
