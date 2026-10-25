@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How to Disable IPv6 for Consoles</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/js/main.js" defer></script>
+  </head>
+  <body>
+    <nav class="topbar">
+      <a href="/" class="nav-btn">Home</a>
+      <a href="about.html" class="nav-btn">About</a>
+      <a href="Resources.html" class="nav-btn">Resources</a>
+      <button type="button" id="themeToggle">☾</button>
+    </nav>
+    <div class="layout">
+      <nav class="sidebar">
+        <input
+          type="text"
+          id="searchBar"
+          placeholder="Search errors..."
+          oninput="filterErrors()"
+        />
+        <h2>List of Errors</h2>
+        <ul id="errorList">
+          <li>
+            <a href="Fatal-D3D-Error-DXGI-Device-Removed.html"
+              >Fatal D3D error</a
+            >
+          </li>
+          <li>
+            <a href="0x140000000-0xa4d69d0.html">0x140000000 + 0xa4d69d0</a>
+          </li>
+          <li><a href="R1141-TAD-W72T10001.html">R1141-TAD-W72T:10001</a></li>
+          <li>
+            <a href="R31A6-0-03 + R35A6-0-03 + S9041-TAD-W72T.html"
+              >R31A6-0-0:3 / R35A6-0-0:3 / S9041-TAD-W72T</a
+            >
+          </li>
+          <li><a href="R1152-TAD-W79J10001.html">R1152-TAD-W79:10001</a></li>
+        </ul>
+      </nav>
+      <div class="main">
+        <h1>How to Disable IPv6 for Consoles</h1>
+
+        <p>
+          <b>Note:</b> Unlike PCs, where IPv6 can be disabled for the individual
+          device, consoles may require disabling IPv6 at the router-level, which
+          not all routers allow. This affects all devices connected to the
+          router. This is usually fine if your daily home usage looks like
+          streaming, YouTube, Steam, Discord, gaming, web browsing, email,
+          downloads, etc. Those can generally operate perfectly well over IPv4.
+          The probability that disabling IPv6 breaks something a typical home
+          user needs is not zero, but very low. IPv6 can simply be re-enabled if
+          it breaks compatibility with anything.
+        </p>
+
+        <p>
+          To
+          <b
+            >disable IPv6 for Playstation and Xbox consoles, you will need to
+            access your router's admin page.</b
+          >
+          You can visit
+          <a href="how-to-access-your-router's-admin-page.html"
+            >How to Access your Router's Admin Page</a
+          >
+          to learn how.
+        </p>
+
+        <p>
+          After accessing your router's admin page, you will need to
+          <b>find the section that includes IPv6 settings.</b> As is the case
+          with router settings, <b>names vary by brand.</b> IPv6 settings are
+          commonly found in:
+        </p>
+
+        <p>Advanced → Network → IPv6</p>
+
+        <p>or</p>
+
+        <p>Internet/WAN → IPv6</p>
+
+        <p>or</p>
+
+        <p>Network → IPv6</p>
+
+        <p>Here are other locations where IPv6 may be found:</p>
+        <ul>
+          <li>LAN</li>
+          <li>LAN Settings</li>
+          <li>IP Settings</li>
+          <li>Connection Settings</li>
+          <li>Broadband</li>
+          <li>Home Network</li>
+          <li>Local Network</li>
+          <li>Administration / Advanced Administration — less common</li>
+        </ul>
+
+        <p>
+          After you find the settings, disabling IPv6 is usually as simple as
+          unchecking a checkbox/toggle or a dropdown menu where you select
+          "Disabled." Save the changes, and reboot your router to ensure the
+          changes are fully applied.
+        </p>
+
+        <p>
+          If you cannot find an option to disable IPv6, you may call your
+          Internet Service Provider and ask them to disable it from their end.
+          If disabling IPv6 did not resolve the error, remember to re-enable it
+          for general compatibility's sake.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
