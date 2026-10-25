@@ -32,7 +32,7 @@
             .addEventListener("click", toggleTheme);
     
 
-/* ===== Sidebar bar===== */
+/* ===== Sidebar===== */
 
 function filterErrors() {
             var input = document

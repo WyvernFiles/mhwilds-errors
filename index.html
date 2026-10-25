@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Monster Hunter Wilds: Diagnostic Manual</title>
     <link rel="stylesheet" href="/css/style.css" />
-    <script src="/js/main.js" defer></script>
+    <script src="/js/themetoggle-and-searchbar.js" defer></script>
+    <script src="/js/sidebar.js" defer></script>
+    <script src="/js/topbar.js" defer></script>
   </head>
   <body>
     <nav class="topbar">
-      <a href="/" class="nav-btn">Home</a>
-      <a href="about.html" class="nav-btn">About</a>
-      <a href="Resources.html" class="nav-btn">Resources</a>
       <button type="button" id="themeToggle">☾</button>
     </nav>
     <div class="layout">
@@ -23,24 +22,7 @@
           oninput="filterErrors()"
         />
         <h2>List of Errors</h2>
-        <ul id="errorList">
-          <li>
-            <a href="Fatal-D3D-Error-DXGI-Device-Removed.html"
-              >Fatal D3D error</a
-            >
-          </li>
-
-          <li>
-            <a href="0x140000000-0xa4d69d0.html">0x140000000 + 0xa4d69d0</a>
-          </li>
-          <li><a href="R1141-TAD-W72T10001.html">R1141-TAD-W72T:10001</a></li>
-          <li>
-            <a href="connectivity-r31a6003-r35a6003-s9041-tad-w72t.html"
-              >R31A6-0-0:3 / R35A6-0-0:3 / S9041-TAD-W72T</a
-            >
-          </li>
-          <li><a href="R1152-TAD-W79J10001.html">R1152-TAD-W79:10001</a></li>
-        </ul>
+        <ul id="errorList"></ul>
       </nav>
       <div class="main">
         <header>

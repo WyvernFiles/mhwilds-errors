@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Intel 13th & 14th Gen CPUs Solution and Workaround</title>
     <link rel="stylesheet" href="/css/style.css" />
-    <script src="/js/main.js" defer></script>
+    <script src="/js/themetoggle-and-searchbar.js" defer></script>
+    <script src="/js/sidebar.js" defer></script>
+    <script src="/js/topbar.js" defer></script>
   </head>
   <body>
     <nav class="topbar">
-      <a href="/" class="nav-btn">Home</a>
-      <a href="about.html" class="nav-btn">About</a>
-      <a href="Resources.html" class="nav-btn">Resources</a>
       <button type="button" id="themeToggle">☾</button>
     </nav>
     <div class="layout">
@@ -23,23 +22,7 @@
           oninput="filterErrors()"
         />
         <h2>List of Errors</h2>
-        <ul id="errorList">
-          <li>
-            <a href="Fatal-D3D-Error-DXGI-Device-Removed.html"
-              >Fatal D3D error</a
-            >
-          </li>
-          <li>
-            <a href="0x140000000-0xa4d69d0.html">0x140000000 + 0xa4d69d0</a>
-          </li>
-          <li><a href="R1141-TAD-W72T10001.html">R1141-TAD-W72T:10001</a></li>
-          <li>
-            <a href="connectivity-r31a6003-r35a6003-s9041-tad-w72t.html"
-              >R31A6-0-0:3 / R35A6-0-0:3 / S9041-TAD-W72T</a
-            >
-          </li>
-          <li><a href="R1152-TAD-W79J10001.html">R1152-TAD-W79:10001</a></li>
-        </ul>
+        <ul id="errorList"></ul>
       </nav>
       <div class="main">
         <h1>Intel 13th & 14th Gen CPUs Solution and Workaround</h1>
@@ -110,7 +93,7 @@
           If it does not end in a suffix, or contains only an F (i.e. 13th Gen
           Intel(R) Core(TM) i7-13700F), then it is a locked processor, and you
           must navigate to
-          <a href="Fatal-D3D-Error-DXGI-Device-Removed.html"
+          <a href="/errors/graphics/fatal-d3d-error-dxgi-device-removed.html"
             >Fatal-D3D-Error-DXGI-Device-Removed</a
           >
           to try general solutions. Otherwise, if it ends with the following
@@ -146,7 +129,7 @@
           <li>
             Launch the game and test whether crashes persist. If they do, revert
             Performance Core Ratio to original value, and navigate to
-            <a href="Fatal-D3D-Error-DXGI-Device-Removed.html"
+            <a href="/errors/graphics/fatal-d3d-error-dxgi-device-removed.html"
               >Fatal-D3D-Error-DXGI-Device-Removed</a
             >
             to try general solutions.
