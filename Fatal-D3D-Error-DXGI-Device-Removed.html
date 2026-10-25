@@ -4,13 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fatal D3D Error - DXGI Device Removed</title>
-    <script>
-      const savedTheme = localStorage.getItem("theme");
-      if (savedTheme === "light" || savedTheme === "dark") {
-        document.documentElement.setAttribute("data-theme", savedTheme);
-      }
-    </script>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <nav class="topbar">
@@ -447,48 +442,6 @@
           by filling out their technical inquiry contact form. Include your
           platform, and the troubleshooting steps you already took.
         </p>
-        <script>
-          function filterErrors() {
-            var input = document
-              .getElementById("searchBar")
-              .value.toLowerCase();
-            var list = document.getElementById("errorList");
-            var items = list.getElementsByTagName("li");
-
-            for (var i = 0; i < items.length; i++) {
-              var text = items[i].textContent.toLowerCase();
-              if (text.includes(input)) {
-                items[i].style.display = "";
-              } else {
-                items[i].style.display = "none";
-              }
-            }
-          }
-          function toggleTheme() {
-            const html = document.documentElement;
-            const button = document.getElementById("themeToggle");
-
-            if (html.getAttribute("data-theme") === "light") {
-              html.setAttribute("data-theme", "dark");
-              button.textContent =
-                html.getAttribute("data-theme") === "light" ? "☾" : "☀";
-              localStorage.setItem("theme", html.getAttribute("data-theme"));
-            } else {
-              html.setAttribute("data-theme", "light");
-              button.textContent =
-                html.getAttribute("data-theme") === "light" ? "☾" : "☀";
-              localStorage.setItem("theme", html.getAttribute("data-theme"));
-            }
-          }
-          const themeButton = document.getElementById("themeToggle");
-          themeButton.textContent =
-            document.documentElement.getAttribute("data-theme") === "light"
-              ? "☾"
-              : "☀";
-          document
-            .getElementById("themeToggle")
-            .addEventListener("click", toggleTheme);
-        </script>
       </div>
     </div>
   </body>
