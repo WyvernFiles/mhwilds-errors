@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How to Access Your Router's Admin Page</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/themetoggle-and-searchbar.js"></script>
+    <script src="/js/sidebar.js" defer></script>
+    <script src="/js/topbar.js" defer></script>
+  </head>
+  <body>
+    <nav class="topbar">
+      <button type="button" id="themeToggle">☾</button>
+    </nav>
+    <div class="layout">
+      <nav class="sidebar">
+        <input
+          type="text"
+          id="searchBar"
+          placeholder="Search errors..."
+          oninput="filterErrors()"
+        />
+        <h2>List of Errors</h2>
+        <ul id="errorList"></ul>
+      </nav>
+      <div class="main">
+        <h1>How to Access Your Router's Admin Page</h1>
+
+        <p>
+          Gaining access to your router's admin page is sometimes necessary for
+          manual configuration. To do so, you will need your router's Default
+          Gateway.
+        </p>
+
+        <h2>On PlayStation</h2>
+        <ul>
+          <li>Go to Settings</li>
+          <li>Go to Network - View Connection Status</li>
+          <li>
+            Find and note your Default Gateway (usually beginning with 192)
+          </li>
+        </ul>
+
+        <h2>On Xbox Series X|S / Xbox One</h2>
+        <ul>
+          <li>Press the Xbox button to open the guide</li>
+          <li>
+            Go to Profile & system & Settings & General & Network settings
+          </li>
+          <li>Select Advanced settings</li>
+          <li>
+            Find and mark your Default Gateway (usually beginning with 192)
+          </li>
+        </ul>
+
+        <h2>On PC (Windows)</h2>
+        <ul>
+          <li>Press Win + R</li>
+          <li>Type "cmd" and press Enter</li>
+          <li>Type ipconfig /all and press Enter</li>
+          <li>Find your active adapter (Ethernet or Wi-Fi)</li>
+          <li>
+            Find and mark your Default Gateway (usually beginning with 192)
+          </li>
+        </ul>
+
+        <p>Then, you will need to <b>log into your router:</b></p>
+        <ul>
+          <li>Open a browser</li>
+          <li>
+            Type your Gateway in the address field to enter your router's admin
+            page
+          </li>
+          <li>
+            Enter your router's username and password, both of which are usually
+            found on a sticker on the router itself, or the router's manual.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

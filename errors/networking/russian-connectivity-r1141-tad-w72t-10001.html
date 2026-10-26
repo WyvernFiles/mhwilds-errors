@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>R1141-TAD-W72T:10001</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/themetoggle-and-searchbar.js"></script>
+    <script src="/js/sidebar.js" defer></script>
+    <script src="/js/topbar.js" defer></script>
+  </head>
+  <body>
+    <nav class="topbar">
+      <button type="button" id="themeToggle">☾</button>
+    </nav>
+    <div class="layout">
+      <nav class="sidebar">
+        <input
+          type="text"
+          id="searchBar"
+          placeholder="Search errors..."
+          oninput="filterErrors()"
+        />
+        <h2>List of Errors</h2>
+        <ul id="errorList"></ul>
+      </nav>
+      <div class="main">
+        <h1>R1141-TAD-W72T:10001</h1>
+        <h2>Briefing:</h2>
+        <p>
+          R1141-TAD-W72T:10001 is another networking error which follows the
+          same resolution steps as
+          <a
+            href="/errors/networking/general-connectivity-r31a6003-r35a6003-s9041-tad-w72t.html"
+            >R31A6-0-03 / R35A6-0-03 / S9041-TAD-W72T</a
+          >. Therefore, try the steps in that page first, as the section below
+          only concerns players who live in Russia.
+        </p>
+
+        <p>
+          <b>Note:</b> If you live in Russia, especially the Russian Far East,
+          or if your Internet Service Provider happens to be Rostelecom or
+          smaller ISPs that rely on its infrastructure, and the steps in the
+          <a
+            href="/errors/networking/general-connectivity-r31a6003-r35a6003-s9041-tad-w72t.html"
+            >R31A6-0-03 / R35A6-0-03 / S9041-TAD-W72T</a
+          >
+          guide did not work, then you could try Yandex's Domain Name System
+          (DNS). Players in Russia report that it may resolve this specific
+          error. This only applies to players in Russia.
+        </p>
+
+        <p>
+          <b>Privacy Trade-off:</b> Yandex's DNS logs queries per Russian law,
+          meaning they can see the domains you visit but not what you do inside,
+          and may retain such information for some time. They may also be
+          obligated to provide such queries to state agencies when requested. If
+          you have been using your Internet Service Provider's DNS, then your
+          queries are already being logged by them. What differs then is the
+          retention period of your queries, that is, how long they are stored,
+          and the degree of compliance and cooperation with state agencies.
+        </p>
+
+        <h2>On Windows</h2>
+
+        <ul>
+          <li>Win + I on keyboard</li>
+          <li>Click Network & Internet</li>
+          <li>Select your connection (Wi-Fi/Ethernet)</li>
+          <li>Scroll down to DNS server assignment</li>
+          <li>Click Edit</li>
+          <li>Change the dropdown menu from Automatic DHCP to Manual</li>
+          <li>
+            Under IPv4: Enter the DNS addresses: 77.88.8.88 in "Preferred DNS,"
+            and 77.88.8.2 in "Alternate DNS"
+          </li>
+        </ul>
+
+        <h2>On PlayStation (PS5/PS4)</h2>
+        <ul>
+          <li>Go to Settings, then Network</li>
+          <li>Select Set Up Internet Connection</li>
+          <li>
+            Select your connection, press the start button while selecting it,
+            then "Advanced Settings"
+          </li>
+          <li>Find DNS Settings and change them to Manual</li>
+          <li>
+            Enter the DNS addresses: 77.88.8.88 in Primary, and 77.88.8.2 in
+            Secondary
+          </li>
+        </ul>
+
+        <h2>On Xbox</h2>
+        <ul>
+          <li>Go to Settings, then General, then Network Settings</li>
+          <li>Go to Advanced Settings, DNS Setting</li>
+          <li>Change to Manual</li>
+          <li>
+            Enter the DNS addresses: 77.88.8.88 in Primary, and 77.88.8.2 in
+            Secondary
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

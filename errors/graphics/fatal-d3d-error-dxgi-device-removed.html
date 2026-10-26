@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fatal D3D Error - DXGI Device Removed</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="/js/main.js" defer></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/themetoggle-and-searchbar.js"></script>
+    <script src="/js/sidebar.js" defer></script>
+    <script src="/js/topbar.js" defer></script>
   </head>
   <body>
     <nav class="topbar">
-      <a href="/" class="nav-btn">Home</a>
-      <a href="About.html" class="nav-btn">About</a>
-      <a href="Resources.html" class="nav-btn">Resources</a>
       <button type="button" id="themeToggle">☾</button>
     </nav>
     <div class="layout">
@@ -23,18 +22,7 @@
           oninput="filterErrors()"
         />
         <h2>List of Errors</h2>
-        <ul id="errorList">
-          <li>
-            <a href="0x140000000-0xa4d69d0.html">0x140000000 + 0xa4d69d0</a>
-          </li>
-          <li><a href="R1141-TAD-W72T10001.html">R1141-TAD-W72T:10001</a></li>
-          <li>
-            <a href="R31A6-0-03 + R35A6-0-03 + S9041-TAD-W72T.html"
-              >R31A6-0-0:3 / R35A6-0-0:3 / S9041-TAD-W72T</a
-            >
-          </li>
-          <li><a href="R1152-TAD-W79J10001.html">R1152-TAD-W79J:10001</a></li>
-        </ul>
+        <ul id="errorList"></ul>
       </nav>
       <div class="main">
         <h1>Fatal-D3D-Error-DXGI-Device-Removed</h1>
@@ -57,7 +45,7 @@
           While this error is GPU-related, some of these CPUs come with a
           manufacturing defect that has a known root cause which may cause this
           exact error. If you own such CPUs, try the fixes in
-          <a href="Intel 13th & 14th Gen CPUs Solution and Workaround.html"
+          <a href="/intel-13th-&-14th-gen-cpus-solution-and-workaround.html"
             >Intel 13th & 14th Gen CPUs Solution and Workaround</a
           >
           first.
@@ -203,7 +191,7 @@
         <p>
           <b>For NVIDIA owners:</b> If you recently updated your graphics driver
           and then crashes occurred, roll back to driver version
-          <a href="https://www.nvidia.com/en-gb/drivers/details/242448"
+          <a href="https://www.nvidia.com/en-gb/drivers/details/242448/"
             >572.83</a
           >
           which supports RTX 5090, 5080 and 5070 cards, but not 5060s. If you're

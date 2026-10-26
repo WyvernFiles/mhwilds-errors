@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>0x140000000 + 0xa4d69d0</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/themetoggle-and-searchbar.js"></script>
+    <script src="/js/sidebar.js" defer></script>
+    <script src="/js/topbar.js" defer></script>
+  </head>
+  <body>
+    <nav class="topbar">
+      <button type="button" id="themeToggle">☾</button>
+    </nav>
+    <div class="layout">
+      <nav class="sidebar">
+        <input
+          type="text"
+          id="searchBar"
+          placeholder="Search errors..."
+          oninput="filterErrors()"
+        />
+        <h2>List of Errors</h2>
+        <ul id="errorList"></ul>
+      </nav>
+      <div class="main">
+        <h1>0x140000000 + 0xa4d69d0</h1>
+
+        <h2>Briefing:</h2>
+        <p>
+          The game crashes with an "unhandled exception" referencing
+          "MonsterHunterWilds.exe!0x140000000 + 0xa4d69d0".
+        </p>
+
+        <h2>Likely Cause:</h2>
+        <p>Unknown.</p>
+
+        <h2>General Fixes:</h2>
+
+        <h3>1. Download and insert dinput8.dll into the game's directory.</h3>
+        <p>
+          While the reason this DLL file can fix the crash remains unknown, it
+          is a widely reported solution.
+        </p>
+        <ul>
+          <li>
+            Navigate to REFramework's
+            <a href="https://github.com/praydog/REFramework-nightly/releases"
+              >GitHub page</a
+            >
+          </li>
+          <li>
+            The latest release should be selected by default. Scroll down to the
+            "Assets" list, and download "REFramework.zip"
+          </li>
+          <li>
+            Open Steam - Library - Right click the game - Manage - Browse Local
+            Files
+          </li>
+          <li>
+            Open the REFramework folder you previously downloaded. It should
+            contain a file named "dinput8.dll"
+          </li>
+          <li>
+            Move the dinput8.dll file from the REFramework folder to the game's
+            directory
+          </li>
+        </ul>
+
+        <p>
+          Afterwards, try launching the game. You may see a dropdown REFramework
+          menu, often used for modding, which you can simply close by pressing
+          "X" or the "Insert" button. If the game no longer crashes, you can
+          keep the file. Otherwise, and this is a low-confidence fix, you can
+          try installing older REFramework versions, though not far from the
+          latest. If those fail to resolve the crash as well, you should delete
+          REFramework and its dinput8.dll file.
+        </p>
+
+        <h2>If the fixes don't work:</h2>
+        <p>
+          The problem might be outside your control. You can try reporting the
+          problem to
+          <a href="https://www.monsterhunter.com/support/wilds/en/form/consent"
+            >Capcom Support</a
+          >
+          by filling out their technical inquiry contact form. Include your
+          platform, and the troubleshooting steps you already took.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
