@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About This Manual</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "light" || savedTheme === "dark") {
+          document.documentElement.setAttribute("data-theme", savedTheme);
+        }
+      })();
+    </script>
     <script src="/js/themetoggle-and-searchbar.js" defer></script>
     <script src="/js/sidebar.js" defer></script>
     <script src="/js/topbar.js" defer></script>
