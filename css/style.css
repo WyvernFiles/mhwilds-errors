@@ -66,25 +66,24 @@ html[data-theme="light"] h3 {
   color: var(--light-text-primary);
 }
 
-html[data-theme="light"] h2,
-html[data-theme="light"] b,
-html[data-theme="light"] strong,
 html[data-theme="light"] a {
-  color: var(--light-main);
+  color: #2d83a3;
 }
 
-html[data-theme="light"] .sidebar li.active {
-  background-color: var(--light-sidebar-active);
+html[data-theme="light"] a:hover {
+  color: var(--light-text-body);
+}
+
+html[data-theme="light"] h2,
+html[data-theme="light"] b,
+html[data-theme="light"] strong {
+  color: var(--light-main);
 }
 
 html[data-theme="light"] #searchBar {
   background-color: var(--light-searchbar-background);
   border-color: var(--light-border);
   color: var(--light-text-body);
-}
-
-html[data-theme="light"] a:active {
-  background-color: var(--light-sidebar-active);
 }
 
 html[data-theme="light"] #themeToggle {
@@ -127,7 +126,9 @@ html {
   top: 0;
   z-index: 1000;
 }
+
 /* ===== Topbar Elements ===== */
+
 .nav-btn {
   display: flex;
   align-self: stretch;
@@ -183,9 +184,6 @@ html {
   padding: 4px;
   margin-bottom: 10px;
 }
-.sidebar li.active {
-  background-color: var(--dark-sidebar-active);
-}
 
 /* ===== Searchbar ===== */
 
@@ -238,6 +236,7 @@ a {
 
 a:hover {
   color: var(--dark-text-primary);
+  text-decoration: underline;
 }
 
 /* ===== Headings ===== */

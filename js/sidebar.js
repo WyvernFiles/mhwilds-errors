@@ -31,11 +31,6 @@ const link = document.createElement("a");
 link.href = error.file;
 link.textContent = error.label;
 
-if (new URL(link.href).pathname === window.location.pathname) {
-  item.classList.add("active");
-  link.setAttribute("aria-current", "page");
-}
-
 item.appendChild(link);
 errorList.appendChild(item);
 }
