@@ -6,12 +6,7 @@ const elements = [
 ];
 
 const topbar = document.querySelector(".topbar");
-const currentPath = normalizePath(window.location.pathname);
-
-function normalizePath(path) {
-    const normalizedPath = path.replace(/\/+$/, "") || "/";
-    return normalizedPath === "/index.html" ? "/" : normalizedPath;
-}
+const currentPath = window.location.pathname;
 
 for (const element of elements) {
 
@@ -20,7 +15,7 @@ for (const element of elements) {
     link.href = element.File;
     link.textContent = element.label;
     link.classList.add("nav-btn");
-    if (normalizePath(new URL(element.File, window.location.origin).pathname) === currentPath) {
+    if (new URL(element.File, window.location.origin).pathname === currentPath) {
         link.classList.add("active");
         link.setAttribute("aria-current", "page");
     }
