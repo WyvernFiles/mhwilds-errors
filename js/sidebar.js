@@ -23,18 +23,18 @@ file:"/errors/networking/russian-connectivity-r1141-tad-w72t-10001.html",
 
 const errorList = document.getElementById("errorList");
 
-const currentPath = window.location.pathname.replace(/\.html$/, "");
-
 for (const error of errors) {
-    const errorPath = error.file.replace(/\.html$/, ""); 
-    if (errorPath === currentPath) continue;
-
 
 const item = document.createElement("li");
 const link = document.createElement("a");
 
 link.href = error.file;
-link.textContent = error.label
+link.textContent = error.label;
+
+if (new URL(link.href).pathname === window.location.pathname) {
+  item.classList.add("active");
+  link.setAttribute("aria-current", "page");
+}
 
 item.appendChild(link);
 errorList.appendChild(item);
