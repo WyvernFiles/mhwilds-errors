@@ -25,14 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
 /* ===== Sidebar ===== */
 
 function filterErrors() {
-            var input = document
+            let input = document
               .getElementById("searchBar")
               .value.toLowerCase();
-            var list = document.getElementById("errorList");
-            var items = list.getElementsByTagName("li");
+            let list = document.getElementById("errorList");
+            let items = list.getElementsByTagName("li");
 
-            for (var i = 0; i < items.length; i++) {
-              var text = items[i].textContent.toLowerCase();
+            for (let i = 0; i < items.length; i++) {
+              let text = items[i].textContent.toLowerCase();
               if (text.includes(input)) {
                 items[i].style.display = "";
               } else {
