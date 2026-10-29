@@ -1,6 +1,6 @@
 /* ===== Theme ===== */
 
-function toggleTheme() {
+export function toggleTheme() {
   const html = document.documentElement;
   const button = document.getElementById("themeToggle");
   const theme = html.getAttribute("data-theme") === "light" ? "dark" : "light";
@@ -10,13 +10,13 @@ function toggleTheme() {
   localStorage.setItem("theme", theme);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const themeButton = document.getElementById("themeToggle");
-  themeButton.textContent =
-    document.documentElement.getAttribute("data-theme") === "light" ? "☾" : "☀";
-  themeButton.addEventListener("click", toggleTheme);
-});
-
-
-
-          
+export function initializeTheme() {
+  document.addEventListener("DOMContentLoaded", () => {
+    const themeButton = document.getElementById("themeToggle");
+    themeButton.textContent =
+      document.documentElement.getAttribute("data-theme") === "light"
+        ? "☾"
+        : "☀";
+    themeButton.addEventListener("click", toggleTheme);
+  });
+}
