@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>0x140000000 + 0xa4d69d0</title>
     <link rel="stylesheet" href="/css/style.css" />
-    <script src="/js/themetoggle-and-searchbar.js"></script>
-    <script src="/js/sidebar.js" defer></script>
-    <script src="/js/topbar.js" defer></script>
+    <script src="/js/applysavedtheme.js"></script>
+    <script type="module" src="/js/main.js"></script>
   </head>
   <body>
     <nav class="topbar">
@@ -15,16 +14,11 @@
     </nav>
     <div class="layout">
       <nav class="sidebar">
-        <input
-          type="text"
-          id="searchBar"
-          placeholder="Search errors..."
-          oninput="filterErrors()"
-        />
+        <input type="text" id="searchBar" placeholder="Search errors..." />
         <h2>List of Errors</h2>
         <ul id="errorList"></ul>
       </nav>
-      <div class="main">
+      <main class="main">
         <h1>0x140000000 + 0xa4d69d0</h1>
 
         <h2>Briefing:</h2>
@@ -88,7 +82,7 @@
           by filling out their technical inquiry contact form. Include your
           platform, and the troubleshooting steps you already took.
         </p>
-      </div>
+      </main>
     </div>
   </body>
 </html>

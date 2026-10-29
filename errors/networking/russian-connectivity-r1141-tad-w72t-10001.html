@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>R1141-TAD-W72T:10001</title>
     <link rel="stylesheet" href="/css/style.css" />
-    <script src="/js/themetoggle-and-searchbar.js"></script>
-    <script src="/js/sidebar.js" defer></script>
-    <script src="/js/topbar.js" defer></script>
+    <script src="/js/applysavedtheme.js"></script>
+    <script type="module" src="/js/main.js"></script>
   </head>
   <body>
     <nav class="topbar">
@@ -15,16 +14,11 @@
     </nav>
     <div class="layout">
       <nav class="sidebar">
-        <input
-          type="text"
-          id="searchBar"
-          placeholder="Search errors..."
-          oninput="filterErrors()"
-        />
+        <input type="text" id="searchBar" placeholder="Search errors..." />
         <h2>List of Errors</h2>
         <ul id="errorList"></ul>
       </nav>
-      <div class="main">
+      <main class="main">
         <h1>R1141-TAD-W72T:10001</h1>
         <h2>Briefing:</h2>
         <p>
@@ -101,7 +95,7 @@
             Secondary
           </li>
         </ul>
-      </div>
+      </main>
     </div>
   </body>
 </html>
