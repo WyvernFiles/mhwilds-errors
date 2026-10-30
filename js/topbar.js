@@ -14,7 +14,10 @@ export function buildTopbar() {
     link.textContent = element.label;
     link.classList.add("nav-btn");
 
-    if (link.pathname === window.location.pathname) {
+    const currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
+    const targetPath = new URL(link.href).pathname.replace(/\/+$/, "") || "/";
+
+    if (targetPath === currentPath) {
       link.classList.add("active");
     }
 

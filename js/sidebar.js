@@ -33,7 +33,10 @@ export function buildSidebar() {
     link.href = error.file;
     link.textContent = error.label;
 
-    if (link.pathname === window.location.pathname) {
+    const currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
+    const targetPath = new URL(link.href).pathname.replace(/\/+$/, "") || "/";
+
+    if (targetPath === currentPath) {
       item.classList.add("active");
     }
 
