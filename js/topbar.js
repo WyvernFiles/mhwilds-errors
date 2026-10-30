@@ -6,7 +6,6 @@ export function buildTopbar() {
   ];
 
   const topbar = document.querySelector(".topbar");
-  const currentPath = window.location.pathname;
 
   for (const element of elements) {
     const link = document.createElement("a");
@@ -14,6 +13,10 @@ export function buildTopbar() {
     link.href = element.File;
     link.textContent = element.label;
     link.classList.add("nav-btn");
+
+    if (link.pathname === window.location.pathname) {
+      link.classList.add("active");
+    }
 
     topbar.insertBefore(link, document.getElementById("themeToggle"));
   }
