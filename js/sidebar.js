@@ -33,6 +33,13 @@ export function buildSidebar() {
     link.href = error.file;
     link.textContent = error.label;
 
+    if (
+      link.pathname.replace(/\.html$/, "") ===
+      window.location.pathname.replace(/\.html$/, "")
+    ) {
+      item.classList.add("active");
+    }
+
     item.appendChild(link);
     errorList.appendChild(item);
   }

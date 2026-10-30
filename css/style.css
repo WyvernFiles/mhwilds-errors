@@ -9,10 +9,10 @@
 
   --dark-sidebar-background: #3a424c;
   --dark-sidebar-items: #303740;
-  --dark-sidebar-active: #252a32;
+  --dark-sidebar-active: #001221;
 
   --dark-topbar-background: #373c43;
-  --dark-topbar-active: #252a32;
+  --dark-topbar-active: #001221;
 
   --dark-searchbar-background: #323840;
 
@@ -27,74 +27,14 @@
 
   --light-sidebar-background: #c4d1dc;
   --light-sidebar-items: #dce5ec;
-  --light-sidebar-active: #b3c5d4;
+  --light-sidebar-active: #e8f2fc;
 
   --light-topbar-background: #cbd7e1;
-  --light-topbar-active: #b3c5d4;
+  --light-topbar-active: #e8f2fc;
 
   --light-searchbar-background: #e4ebf0;
 
   --light-border: #a3b2bf;
-}
-
-html[data-theme="light"] body,
-html[data-theme="light"] .main {
-  background-color: var(--light-background);
-  color: var(--light-text-body);
-}
-html[data-theme="light"] .topbar {
-  background-color: var(--light-topbar-background);
-  border-color: var(--light-border);
-}
-
-html[data-theme="light"] .topbar .nav-btn.active {
-  background-color: var(--light-topbar-active);
-}
-
-html[data-theme="light"] .sidebar {
-  background-color: var(--light-sidebar-background);
-}
-
-html[data-theme="light"] .sidebar li {
-  background-color: var(--light-sidebar-items);
-  border-color: var(--light-border);
-}
-
-html[data-theme="light"] .sidebar h2,
-html[data-theme="light"] h1,
-html[data-theme="light"] h3 {
-  color: var(--light-text-primary);
-}
-
-html[data-theme="light"] a {
-  color: #245c8a;
-}
-
-html[data-theme="light"] a:hover {
-  color: var(--light-text-body);
-}
-
-html[data-theme="light"] h2,
-html[data-theme="light"] b,
-html[data-theme="light"] strong {
-  color: var(--light-main);
-}
-
-html[data-theme="light"] #searchBar {
-  background-color: var(--light-searchbar-background);
-  border-color: var(--light-border);
-  color: var(--light-text-body);
-}
-
-html[data-theme="light"] #themeToggle {
-  background-color: var(--light-searchbar-background);
-  color: var(--light-text-primary);
-  border: 1px solid var(--light-border);
-}
-
-html[data-theme="light"] #searchBar:focus {
-  border-color: var(--light-main);
-  background-color: #edf2f5;
 }
 
 /* ===== Global ===== */
@@ -183,6 +123,10 @@ html {
   border-radius: 12px;
   padding: 4px;
   margin-bottom: 10px;
+}
+
+.sidebar li.active {
+  background-color: var(--dark-sidebar-active);
 }
 
 /* ===== Searchbar ===== */
@@ -287,6 +231,71 @@ ol {
 li {
   margin-bottom: 12px;
 }
+
+html[data-theme="light"] body,
+html[data-theme="light"] .main {
+  background-color: var(--light-background);
+  color: var(--light-text-body);
+}
+html[data-theme="light"] .topbar {
+  background-color: var(--light-topbar-background);
+  border-color: var(--light-border);
+}
+
+html[data-theme="light"] .topbar .nav-btn.active {
+  background-color: var(--light-topbar-active);
+}
+
+html[data-theme="light"] .sidebar {
+  background-color: var(--light-sidebar-background);
+}
+
+html[data-theme="light"] .sidebar li {
+  background-color: var(--light-sidebar-items);
+  border-color: var(--light-border);
+}
+
+html[data-theme="light"] .sidebar li.active {
+  background-color: var(--light-sidebar-active);
+}
+
+html[data-theme="light"] .sidebar h2,
+html[data-theme="light"] h1,
+html[data-theme="light"] h3 {
+  color: var(--light-text-primary);
+}
+
+html[data-theme="light"] a {
+  color: #245c8a;
+}
+
+html[data-theme="light"] a:hover {
+  color: var(--light-text-body);
+}
+
+html[data-theme="light"] h2,
+html[data-theme="light"] b,
+html[data-theme="light"] strong {
+  color: var(--light-main);
+}
+
+html[data-theme="light"] #searchBar {
+  background-color: var(--light-searchbar-background);
+  border-color: var(--light-border);
+  color: var(--light-text-body);
+}
+
+html[data-theme="light"] #themeToggle {
+  background-color: var(--light-searchbar-background);
+  color: var(--light-text-primary);
+  border: 1px solid var(--light-border);
+}
+
+html[data-theme="light"] #searchBar:focus {
+  border-color: var(--light-main);
+  background-color: #edf2f5;
+}
+
 /* ===== Responsive Layout ===== */
 @media (max-width: 760px) {
   .layout {
