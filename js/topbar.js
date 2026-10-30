@@ -14,13 +14,12 @@ export function buildTopbar() {
     link.textContent = element.label;
     link.classList.add("nav-btn");
 
-    const currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
-    const targetPath = new URL(link.href).pathname.replace(/\/+$/, "") || "/";
-
-    if (targetPath === currentPath) {
+    if (
+      link.pathname.replace(/\.html$/, "") ===
+      window.location.pathname.replace(/\.html$/, "")
+    ) {
       link.classList.add("active");
     }
-
     topbar.insertBefore(link, document.getElementById("themeToggle"));
   }
 }
