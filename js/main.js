@@ -7,6 +7,6 @@ buildTopbar();
 
 buildSidebar();
 
-document.getElementById("searchBar").addEventListener("input", filterErrors);
+filterErrors();
 
 initializeTheme();
