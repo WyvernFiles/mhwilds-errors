@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mod-Related Issues</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/applysavedtheme.js"></script>
+    <script type="module" src="/js/main.js"></script>
+  </head>
+  <body>
+    <nav class="topbar">
+      <button type="button" id="themeToggle">☾</button>
+    </nav>
+    <div class="layout">
+      <nav class="sidebar">
+        <input type="text" id="searchBar" placeholder="Search errors..." />
+        <h2>List of Errors</h2>
+        <ul id="errorList"></ul>
+      </nav>
+      <main class="main">
+        <h1>Mod-Related Issues</h1>
+        <h2>Briefing:</h2>
+        <p>
+          You experience framerate drops, freezing, crashes, or failure to
+          launch the game after changing your mod files.
+        </p>
+
+        <h2>Likely Cause:</h2>
+        <p>
+          Incompatible, outdated, or performance-heavy mods are examples of
+          possible culprits.
+        </p>
+
+        <h2>General Fixes (try in order):</h2>
+
+        <h3>1. Remove all mods.</h3>
+        <p>
+          To verify whether mods are in fact the problem, remove all of them,
+          and then test the game.
+        </p>
+
+        <p>To remove the modded files:</p>
+
+        <ul>
+          <li>Open Steam. Navigate to "Library".</li>
+          <li>Right click the game - Manage - Browse Local Files.</li>
+          <li>
+            Move the lua scripts, the "REFramework" folder, the "dinput8.dll"
+            file, and any other content you recognize as modded
+            <b>outside the "MonsterHunterWilds" folder</b> and into a backup
+            folder to make restoration easy.
+          </li>
+          <li>
+            Test the game. If the issue is gone, mods are likely to have been
+            the cause.
+          </li>
+        </ul>
+
+        <h3>2. Re-Add Mods One by One.</h3>
+        <p>
+          After confirming the game is stable without mods, you may begin adding
+          them one by one, while
+          <strong
+            >testing the game for a session or two after every addition to
+            isolate the culprit</strong
+          >. <br /><br />Make sure that your modded files are downloaded from
+          <strong
+            >trusted sources such as Nexus Mods or known GitHub repositories and
+            that they are all up-to-date.</strong
+          >
+          If you are uncertain of whether your mods are of the latest release,
+          find their official release pages to verify you have the latest
+          version.<br /><br />When adding modded files to your game's folder, be
+          sure to
+          <strong
+            >follow the creator's instructions carefully regarding their
+            placement in the game's folder.</strong
+          >
+        </p>
+
+        <p>
+          <b>If you find the culprit</b>, make sure it's updated. If it still
+          causes instability, consider removing it and finding an alternative.
+          You may research and verify from community reports whether the mod is
+          troublesome for others or only your specific device. If the former, a
+          message to the creator to raise awareness may be your only option if
+          workarounds are not present.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
