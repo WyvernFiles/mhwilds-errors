@@ -22,6 +22,10 @@ export function buildSidebar() {
       label: "R1141-TAD-W72T:10001",
       file: "/errors/networking/russian-connectivity-r1141-tad-w72t-10001.html",
     },
+    {
+      label: "Mod-Related Issues",
+      file: "/errors/mods/mod-related-issues.html",
+    },
   ];
 
   const errorList = document.getElementById("errorList");
