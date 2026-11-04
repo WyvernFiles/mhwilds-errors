@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>R1152-TAD-W79J:10001</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/applysavedtheme.js" is:inline></script>
+    <script type="module" src="/scripts/js/main.js"></script>
+  </head>
+  <body>
+    <nav class="topbar">
+      <button type="button" id="themeToggle">☾</button>
+    </nav>
+    <div class="layout">
+      <nav class="sidebar">
+        <input type="text" id="searchBar" placeholder="Search errors..." />
+        <h2>List of Errors</h2>
+        <ul id="errorList"></ul>
+      </nav>
+      <main class="main">
+        <h1>R1152-TAD-W79J:10001</h1>
+
+        <h2>Briefing:</h2>
+
+        <p>
+          You try to connect to a multiplayer session but are unable to do so.
+          The error "R1152-TAD-W79J:10001" is cited.
+        </p>
+
+        <h2>Likely Cause:</h2>
+
+        <p>Firewall rules, IPv6 routing, or VPN status.</p>
+
+        <h2>Prerequisite:</h2>
+
+        <p>Check if the servers are actually down.</p>
+        <p>
+          Before troubleshooting your own network, check the official Monster
+          Hunter status account at
+          <a href="https://x.com/mhstatusupdates">@MHStatusUpdates</a>. If they
+          are reporting a widespread outage or maintenance, the issue is on
+          Capcom's end and no local fix will work. Wait for the servers to come
+          back online.
+        </p>
+
+        <h2>General Fixes (try in order):</h2>
+
+        <h3>
+          1. Allow the game through your firewall, along with its inbound rules.
+        </h3>
+        <p>
+          A frequently reported solution. A device's firewall may prevent it
+          from establishing a connection with the game's servers.
+        </p>
+
+        <p>First, verify which network profile you're currently using:</p>
+        <ul>
+          <li>
+            Press Win + I, and in the left sidebar navigate to Network &
+            Internet.
+          </li>
+          <li>
+            Click your current connection type (Wi-Fi or Ethernet). If the
+            dropdown menu is closed, open it. Memorize your "Network profile
+            type". It will be either "Private" or "Public".
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Press the Windows key to bring up your search bar, search for "Allow
+            an App through Windows Firewall" and click it
+          </li>
+          <li>If the settings are greyed out, click "Change Settings"</li>
+          <li>Click "Allow another app", then "Browse"</li>
+          <li>
+            Find the game's executable file. It is usually located in "This
+            PC\Local Disk (C):\Program Files
+            (x86)\Steam\steamapps\common\MonsterHunterWilds"
+          </li>
+          <li>Add "MonsterHunterWilds.exe" to the list</li>
+          <li>
+            Click "Network types..." and ensure your current network profile
+            type is checked
+          </li>
+        </ul>
+
+        <p>
+          <b>Note:</b> If you are using a third-party firewall, find its documentation
+          to learn how to allow an app through it.
+        </p>
+
+        <p>
+          <b>Allowing the game's inbound rules:</b>
+        </p>
+
+        <ul>
+          <li>
+            Press the Windows key to bring up your search bar, search for
+            "Windows Defender Firewall with Advanced Security" and click it
+          </li>
+          <li>In the left sidebar, click "Inbound Rules"</li>
+          <li>
+            In the large list, find the rules for "Monster Hunter Wilds" and
+            ensure they are enabled. If they are disabled, right-click them and
+            select "Enable Rule"
+          </li>
+          <li>
+            If instead of a checkmark, you see a cross symbol, right-click the
+            rule, then Properties. In the "Action" section, select "Allow the
+            connection" and click OK
+          </li>
+        </ul>
+
+        <p>
+          <b>Test the game's multiplayer functionality</b> after making these changes.
+          If the error persists, or the game was allowed to begin with, you will have
+          to follow the troubleshooting steps found in
+          <a
+            href="/errors/networking/general-connectivity-r31a6003-r35a6003-s9041-tad-w72t.html"
+            >this page</a
+          >. The only difference in resolution is that there are more confirmed
+          reports of Proton VPN resolving this specific error, although you
+          should still try Cloudflare's WARP first for latency's sake.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
