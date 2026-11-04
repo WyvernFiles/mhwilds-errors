@@ -1,23 +1,21 @@
 export function buildTopbar() {
-  const elements = [
-    { label: "Home", File: "/" },
-    { label: "About", File: "/topbar/about.html" },
-    { label: "Resources", File: "/topbar/resources.html" },
+  const links = [
+    { label: "Home", file: "/" },
+    { label: "About", file: "/topbar/about.html" },
+    { label: "Resources", file: "/topbar/resources.html" },
   ];
 
   const topbar = document.querySelector(".topbar");
+  const currentPath = window.location.pathname.replace(/\.html$/, "");
 
-  for (const element of elements) {
+  for (const item of links) {
     const link = document.createElement("a");
 
-    link.href = element.File;
-    link.textContent = element.label;
+    link.href = item.file;
+    link.textContent = item.label;
     link.classList.add("nav-btn");
 
-    if (
-      link.pathname.replace(/\.html$/, "") ===
-      window.location.pathname.replace(/\.html$/, "")
-    ) {
+    if (link.pathname.replace(/\.html$/, "") === currentPath) {
       link.classList.add("active");
     }
     topbar.insertBefore(link, document.getElementById("themeToggle"));

@@ -29,7 +29,7 @@ export function buildSidebar() {
   ];
 
   const errorList = document.getElementById("errorList");
-
+  const currentPath = window.location.pathname.replace(/\.html$/, "");
   for (const error of errors) {
     const item = document.createElement("li");
     const link = document.createElement("a");
@@ -37,10 +37,7 @@ export function buildSidebar() {
     link.href = error.file;
     link.textContent = error.label;
 
-    if (
-      link.pathname.replace(/\.html$/, "") ===
-      window.location.pathname.replace(/\.html$/, "")
-    ) {
+    if (link.pathname.replace(/\.html$/, "") === currentPath) {
       item.classList.add("active");
     }
 

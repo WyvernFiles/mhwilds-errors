@@ -1,6 +1,6 @@
 # Monster Hunter Wilds: Diagnostic Manual
 
-A community-driven diagnostic manual for recurring errors in Monster Hunter Wilds. 
+A community-driven diagnostic manual for recurring errors in Monster Hunter Wilds.
 
 ## Website
 
